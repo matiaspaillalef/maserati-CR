@@ -1,0 +1,8903 @@
+/** GENERALES **/
+:root {
+    --primary-color: #0C2340;
+    --secondary-color: #333333;
+    --tertiary-color: #666666;
+    --quaternary-color: #B6B6B6;
+    --quinary-color: #EBEBEB;
+    --sextenary-color: #F2F1F0;
+    --septenary-color: #ffc845;
+    --septenary-color: #ffc845;
+    --octonary-color: #121212;
+
+    --error: #FF0000;
+
+    --everett-font: 'Everett';
+    --anko-font: 'Anko';
+    --spartan-font: 'Spartan MB';
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: var(--primary-color);
+    border: none !important;
+    outline: none !important;
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+body,
+p,
+span {
+    font-size: 20px;
+    font-family: var(--everett-font);
+}
+
+ul {
+    padding: 0;
+    margin: 15px 0 15px 30px;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.post,
+.page {
+    margin: 0;
+}
+
+div:not(#cc_app) .icon {
+    font-family: 'maserati-font' !important;
+}
+
+.fa-brands,
+.fab {
+    font-family: "Font Awesome 6 Brands" !important;
+}
+
+.fa-solid,
+.fas {
+    font-family: "Font Awesome 6 Free" !important;
+}
+
+img {
+    width: 100%;
+}
+
+h1,
+.h1 {
+    font-family: var(--everett-font);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 52px;
+    line-height: 62px;
+}
+
+h2,
+.h2 {
+    font-family: var(--anko-font);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 68px;
+}
+
+h3,
+.h3 {
+    font-family: var(--everett-font);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+h4,
+.h4 {
+    font-family: var(--anko-font);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+h5,
+.h5 {
+    font-family: var(--everett-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+h6,
+.h6 {
+    font-family: var(--anko-font);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.dropdown-maserati select {
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 30px;
+    gap: 10px;
+    text-align: left;
+    color: var(--primary-color);
+    background-image: url("/wp-content/uploads/2022/11/select.svg");
+}
+
+.fw-100 {
+    font-weight: 100 !important;
+}
+
+.fw-300 {
+    font-weight: 300 !important;
+}
+
+.fw-400 {
+    font-weight: 300 !important;
+}
+
+.fw-500 {
+    font-weight: 500 !important;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: var(--septenary-color);
+    transition: all .5s ease;
+}
+
+button:active,
+button:focus,
+button:focus-visible,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+    outline: none;
+}
+
+.modal {
+    z-index: 9999;
+}
+
+.collapse:not(.show) {
+    display: none !important;
+}
+
+.sidebar-overlay.active {
+    display: block;
+    background: #000;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 8999;
+    min-height: 100vh;
+    opacity: .35;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.sidebar-overlay {
+    display: none;
+}
+
+.open-info-map,
+.sidebar-opened,
+.aside-opened {
+    overflow: hidden;
+}
+
+#map {
+    min-height: 565px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.medium-container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.tiny-container {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.micro-container {
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.label-large {
+    font-size: 16px;
+    font-weight: 500 !important;
+}
+
+.title-border::after {
+    content: '';
+    width: 80px;
+    background: var(--septenary-color);
+    height: 1px;
+    display: block;
+    margin: 15px 0 55px 0;
+
+}
+
+.title-line::after {
+    content: '';
+    width: 80px;
+    background: var(--septenary-color);
+    height: 1px;
+    display: block;
+    margin: 15px 0;
+
+}
+
+.title-line {
+    text-transform: initial;
+    font-size: 36px;
+}
+
+.title-line span {
+    display: block;
+    font-family: var(--anko-font);
+    font-style: italic;
+    text-transform: initial;
+    font-size: 36px;
+    margin-top: 10px;
+}
+
+.paddingY-95 {
+    padding: 95px 0;
+}
+
+.marginB-95 {
+    margin-bottom: 95px;
+}
+
+.marginB-65 {
+    margin-bottom: 65px;
+}
+
+.marginB-45 {
+    margin-bottom: 45px;
+}
+
+.marginX-auto {
+    margin: 0 auto;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+    margin: 0;
+}
+
+.maserati-button {
+    height: 50px;
+    padding: 0 16px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.maserati-button i {
+    margin-right: 10px;
+}
+
+.maserati-button_large {
+    width: 100%;
+    max-width: 232px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.maserati-back--navi_blue {
+    background-color: var(--primary-color);
+    color: white !important;
+    border-color: var(--primary-color);
+    transition: all .5s ease;
+}
+
+.maserati-back--navi_blue:hover {
+    background-color: var(--septenary-color);
+    color: var(--primary-color) !important;
+    border-color: var(--septenary-color);
+    transition: all .5s ease;
+}
+
+.maserati-back--white {
+    background-color: white;
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color);
+    transition: all .5s ease;
+}
+
+.maserati-back--white:hover {
+    background-color: var(--septenary-color);
+    color: var(--primary-color) !important;
+    border-color: var(--septenary-color);
+    transition: all .5s ease;
+}
+
+.maserati-back--transparent {
+    background-color: transparent;
+    color: white !important;
+    border-color: white;
+    transition: all .5s ease;
+}
+
+.maserati-back--transparent:hover {
+    background-color: var(--septenary-color);
+    color: var(--primary-color) !important;
+    border-color: var(--septenary-color);
+    transition: all .5s ease;
+}
+
+.maserati-back--transparent_navy {
+    background-color: transparent;
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color);
+    transition: all .5s ease;
+}
+
+.maserati-back--transparent_navy:hover {
+    background-color: var(--septenary-color);
+    color: var(--primary-color);
+    border-color: var(--septenary-color);
+    transition: all .5s ease;
+}
+
+.maserati-color--navi_blue {
+    color: var(--primary-color);
+}
+
+.maserati-color--dark_grey {
+    color: var(--secondary-color);
+}
+
+.maserati-color--feature_grey {
+    color: var(--tertiary-color);
+}
+
+.maserati-color--slate_grey {
+    color: var(--quaternary-color);
+}
+
+.maserati-color--light_grey {
+    color: var(--quinary-color);
+}
+
+.maserati-color--off_white {
+    color: var(--sextenary-color);
+}
+
+.maserati-color--dark {
+    color: var(--octonary-color);
+}
+
+.maserati-bg--navi_blue {
+    background-color: var(--primary-color);
+}
+
+.maserati-bg--dark_grey {
+    background-color: var(--secondary-color);
+}
+
+.maserati-bg--feature_grey {
+    background-color: var(--tertiary-color);
+}
+
+.maserati-bg--slate_grey {
+    background-color: var(--quaternary-color);
+}
+
+.maserati-bg--light_grey {
+    background-color: var(--quinary-color);
+}
+
+.maserati-bg--off_white {
+    background-color: var(--sextenary-color);
+}
+
+.maserati-bg--dark {
+    background-color: var(--octonary-color);
+}
+
+.maserati-gradient_85 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.85) 55.8%, rgba(0, 0, 0, 0) 111.59%);
+}
+
+.maserati-gradient_100 {
+    background: linear-gradient(0deg, #000000 55.8%, rgba(0, 0, 0, 0) 111.59%);
+}
+
+.card-post-item {
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 1px rgb(79 79 79 / 25%);
+}
+
+.card-post-item img {
+    border-radius: 5px 5px 0 0;
+    max-height: 190px;
+    overflow: hidden;
+}
+
+.card-post-item .content-post {
+    padding: 25px 25px 45px 25px;
+}
+
+.card-post-item h5::after {
+    content: '';
+    background: rgba(12, 35, 64, 0.25);
+    width: 100%;
+    height: 2px;
+    display: block;
+    margin: 32px 0;
+}
+
+.card-post-item p {
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+
+.card-post-item a {
+    font-size: 16px;
+    color: var(--tertiary-color);
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    transition: all .5s ease;
+}
+
+.card-post-item a i {
+    font-size: 13px;
+    margin-left: 15px;
+    transition: all .5s ease;
+}
+
+.card-post-item a:hover {
+    color: var(--primary-color);
+    transition: all .5s ease;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn-close:focus {
+    outline: 0;
+    box-shadow: none;
+    opacity: 1;
+}
+
+.maserati-input {
+    background: white;
+    padding: 14px 16px;
+    height: 46px;
+    line-height: 46px;
+    border: 1px solid var(--quaternary-color);
+    font-family: var(--everett-font);
+    color: var(--primary-color);
+}
+
+.maserati-input::placeholder {
+    color: var(--quaternary-color);
+    font-size: 15px;
+    font-weight: 500;
+    font-family: var(--everett-font);
+}
+
+.maserati-input_textarea {
+    height: auto !important;
+}
+
+.maserati-card {
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.maserati-shadow {
+    box-shadow: 0px 0px 6px 1px rgba(79, 79, 79, 0.25);
+}
+
+.maserati-disclamers {
+    background: var(--tertiary-color);
+    color: white;
+    width: 14px !important;
+    height: 14px !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    border-radius: 100% !important;
+    vertical-align: super;
+    border: none;
+    padding: 0;
+}
+
+.maserati-disclamers span {
+    font-size: 10px !important;
+    color: white !important;
+}
+
+.maserati-paginations {
+    position: absolute;
+    bottom: 58px;
+    width: 100%;
+}
+
+.maserati-paginations #fraction {
+    text-align: left;
+    z-index: 9;
+    position: relative;
+    font-size: 12px;
+    font-family: var(--everett-font);
+    margin-bottom: 8px;
+    left: 5px;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border: 1px solid white;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: white;
+}
+
+.swiper-pagination-name {
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    bottom: 0 !important;
+    margin-bottom: 40px;
+}
+
+.swiper-pagination-name::after {
+    content: '';
+}
+
+.swiper-pagination-name span {
+    width: auto;
+    height: auto;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    line-height: normal;
+    color: var(--quaternary-color);
+    transition: all .5s ease;
+}
+
+.pagination-name.swiper-pagination-bullet-active span {
+    font-size: 20px;
+    color: var(--septenary-color);
+    transition: all .5s ease;
+}
+
+.pagination-name span::after {
+    content: '';
+    background: transparent;
+    height: 3px;
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+    transition: all .5s ease;
+}
+
+.pagination-name.swiper-pagination-bullet-active span::after {
+    background: var(--septenary-color);
+    transition: all .5s ease;
+}
+
+.swiper-pagination-name span+span {
+    margin-left: 50px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 67px;
+    height: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255 255 255 / 50%);
+    border-radius: 100%;
+    font-size: 12px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 14px;
+}
+
+.swiper-horizontal>.swiper-scrollbar {
+    max-width: 865px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.swiper-scrollbar-drag {
+    background: var(--septenary-color);
+}
+
+.no-separator::after {
+    display: none !important;
+}
+
+/** BREADCRUMBS **/
+.breadcrumbs,
+.breadcrumbs a,
+.breadcrumbs span {
+    font-size: 14px;
+}
+
+.breadcrumbs .separator {
+    margin: 0 10px;
+}
+
+.main-slider {
+    position: relative;
+}
+
+.main-slider .swiper-button-next,
+.main-slider .swiper-button-prev {
+    display: none !important;
+}
+
+.breadcrumbs-absolute,
+.maserati-fit-banner .breadcrumbs,
+.main-slider .breadcrumbs {
+    position: absolute;
+    top: 135px;
+    z-index: 99;
+    width: 100%;
+}
+
+.breadcrumbs-relative {
+    margin-top: 35px;
+}
+
+.maserati-fit-banner .breadcrumbs,
+.main-slider .breadcrumbs {
+    color: var(--quinary-color);
+}
+
+.maserati-fit-banner.information-active {
+    position: relative;
+}
+
+.maserati-fit-banner.information-active .breadcrumbs {
+    top: 0;
+}
+
+.maserati-fit-banner.information-active .info-left {
+    position: absolute;
+    max-width: 1100px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 130px;
+}
+
+.maserati-fit-banner.information-active h1 {
+    top: 160px;
+}
+
+/** ACCORDION CARD **/
+.no-accordion-body.accordion-button:not(.collapsed)::after,
+.no-accordion-body.accordion-button::after {
+    display: none;
+}
+
+
+.maserati-card-accordion .accordion-button::after {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-0deg);
+}
+
+.maserati-card-accordion .accordion-button:not(.collapsed)::after {
+    transform: translateY(-50%) rotate(-180deg);
+}
+
+.maserati-card-accordion .accordion-button {
+    border-bottom: none;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 0;
+}
+
+.maserati-card-accordion .accordion-button[aria-expanded="false"] {
+    padding-bottom: 15px;
+}
+
+.maserati-card-accordion .accordion-button:not(.collapsed) {
+    color: var(--primary-color);
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.maserati-card-accordion .accordion-button p {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.maserati-card-accordion .accordion-collapse.show .accordion-body:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: var(--quaternary-color);
+    display: block;
+    float: left;
+    margin: 15px 0;
+}
+
+.maserati-card-accordion .accordion-body {
+    padding: 0 1.25rem 1rem 1.25rem;
+    font-size: 16px;
+}
+
+.maserati-card-accordion .accordion-body p {
+    font-size: 16px;
+}
+
+/** HAMBURGER MENU **/
+.hamburger-menu {
+    top: 0;
+    right: 15px;
+    bottom: 0;
+    margin: auto 0;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.hamburger-menu+p {
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.header-transparent .hamburger-menu+p {
+    color: white;
+}
+
+.bar,
+.bar:after,
+.bar:before {
+    width: 25px;
+    height: 2px;
+}
+
+.bar {
+    position: relative;
+    transform: translateY(12px);
+    background: black;
+    transition: all 0ms 300ms;
+}
+
+.bar.animate {
+    background: rgba(255, 255, 255, 0);
+}
+
+.bar:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    background: black;
+    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+        transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    background: black;
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+        transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar.animate:after {
+    top: 0;
+    transform: rotate(45deg);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1),
+        transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar.animate:before {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1),
+        transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.header-transparent .bar,
+.header-transparent .bar::after,
+.header-transparent .bar::before {
+    background: white;
+}
+
+
+.maserati-content_main__banner {
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+    right: 0;
+    color: white;
+    z-index: 9;
+}
+
+.maserati-content_main__banner .container {
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.maserati-content_main__banner .maserati-button {
+    min-width: 260px;
+}
+
+.maserati-content_main__banner .info-left {
+    display: flex;
+}
+
+.maserati-content_main__banner .info-left img {
+    margin-bottom: 25px;
+}
+
+.maserati-content_main__banner .info-left::after {
+    content: '';
+    display: inline-flex;
+    width: 1px;
+    height: 100px;
+    background: var(--septenary-color);
+    margin: 0 40px;
+}
+
+.maserati-content_main__banner .info-left.no-link::after {
+    display: none;
+}
+
+.maserati-content_main__banner h2 {
+    font-family: var(--everett-font);
+    font-style: normal;
+    font-weight: 100;
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+.main-slider .inner-image img,
+.main-slider .inner-video video {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.main-slider .swiper-slide {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-slider .swiper-pagination {
+    position: relative;
+    text-align: left;
+}
+
+.swiper-2_5 .swiper-slide,
+.swiper-1_5 .swiper-slide,
+.swiper-2_5_gallery .swiper-slide,
+.swiper-2_5_gallery_singles .swiper-slide {
+    transform: scale(.95);
+    transition: all .5s ease;
+}
+
+.swiper-2_5 .swiper-slide:hover,
+.swiper-1_5 .swiper-slide:hover,
+.swiper-2_5_gallery .swiper-slide:hover,
+.swiper-2_5_gallery_singles .swiper-slide:hover {
+    transform: scale(1);
+    transition: all .5s ease;
+}
+
+.swiper-2_5 .swiper-slide a::after,
+.swiper-1_5 .swiper-slide a::after,
+.swiper-2_5_gallery .swiper-slide a::after,
+.swiper-2_5_gallery_singles .swiper-slide a::after {
+    content: '';
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 15.19%, #060606 100%);
+    mix-blend-mode: multiply;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 9;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+.swiper-2_5 .inner-slide img,
+.swiper-2_5_gallery .inner-slide img,
+.swiper-2_5_gallery_singles .inner-slide img {
+    width: 100%;
+    border-radius: 5px;
+    max-height: 380px;
+    min-height: 380px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.swiper-1_5 .inner-slide img,
+.swiper-1_5 .inner-card img {
+    width: 100%;
+    border-radius: 5px;
+    max-height: 460px;
+    min-height: 460px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.swiper-2_5 .swiper-wrapper,
+.swiper-2_5_gallery .swiper-wrapper,
+.swiper-2_5_gallery_singles .swiper-wrapper,
+.swiper-1_5 .swiper-wrapper {
+    padding: 50px 0;
+}
+
+.swiper-2_5 h5,
+.swiper-2_5_gallery h5,
+.swiper-2_5_gallery_singles h5,
+.swiper-1_5 h5 {
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    z-index: 10;
+}
+
+.maserati-fit-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.maserati-fit-banner h1 {
+    position: absolute;
+    max-width: 415px;
+}
+
+/** HEADER **/
+header {
+    padding: 30px 0;
+    z-index: 9999 !important;
+    width: 100%;
+}
+
+header:not(.header-transparent) {
+    background: white;
+    box-shadow: 0px 0px 6px 1px rgba(79, 79, 79, 0.25);
+    width: 100%;
+    top: 0;
+}
+
+header:not(.header-transparent):not(.header-sticky) {
+    position: relative;
+}
+
+.header-transparent {
+    background: transparent;
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+}
+
+header:not(.header-transparent) .maserati-white,
+.header-transparent .maserati-black {
+    display: none;
+}
+
+.inner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-transparent .inner-right .maserati-button {
+    border: none;
+    background: transparent;
+    text-transform: uppercase;
+    color: white;
+}
+
+header:not(.header-transparent) .inner-right .maserati-button {
+    border: none;
+    background: transparent;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.aside-opened .inner-right .maserati-button {
+    color: var(--primary-color) !important;
+}
+
+.inner-right .maserati-button i {
+    margin-left: 20px;
+}
+
+.list-tools {
+    position: absolute;
+    background-color: unset;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: var(--tertiary-color);
+    max-width: 225px;
+}
+
+.list-tools li {
+    border-bottom: 1px solid var(--tertiary-color);
+    min-height: 56px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    padding: 1pc 30px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.list-tools li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-tools li:hover a,
+.list-tools li:hover a+i {
+    color: var(--primary-color);
+    transition: all .5s ease
+}
+
+.list-tools li a,
+.list-tools li a span {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all .5s ease
+}
+
+.list-tools li a i {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.list-tools li a+i {
+    font-size: 12px;
+    transition: all .5s ease
+}
+
+.header-sticky {
+    position: fixed;
+    z-index: 9;
+    background: white;
+    opacity: 0;
+    box-shadow: 0px 1px 10px #00000026;
+    transform: translateY(-100%);
+    transition: all .3s;
+}
+
+.header-sticky .bar,
+.header-sticky .bar::after,
+.header-sticky .bar::before {
+    background: black;
+}
+
+.header-sticky .maserati-black {
+    display: block;
+}
+
+.header-sticky .maserati-white {
+    display: none;
+}
+
+.header-sticky .inner-right button {
+    color: var(--primary-color) !important;
+}
+
+.sticky-show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all .3s;
+}
+
+/** FOOTER **/
+footer {
+    background: var(--octonary-color);
+    color: white;
+    padding: 45px 0 80px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+footer ul li+li {
+    margin-top: 20px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all .5s ease;
+}
+
+footer ul li a:hover,
+footer a:active {
+    color: var(--septenary-color);
+    transition: all .5s ease;
+    /**/
+}
+
+.maserati-footer__logo {
+    margin-bottom: 70px;
+}
+
+.maserati-footer__logo img {
+    max-width: 165px;
+}
+
+footer .title-medium {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.maserati-social a i {
+    font-size: 30px;
+}
+
+.maserati-social a+a {
+    margin-left: 15px;
+}
+
+.maserati-contact {
+    margin-top: 25px;
+}
+
+.maserati-contact p,
+.maserati-contact p a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.maserati-contact p span {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.maserati-contact p i {
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+body.play-audio .pulse-on_off p {
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+body::not(.play-audio) .pulse-on_off p {
+    opacity: 1;
+    transition: all .5s ease;
+}
+
+.bottom-footer {
+    margin-top: 55px;
+}
+
+.bottom-footer p {
+    margin-bottom: 0;
+    font-size: 11px;
+    color: var(--sextenary-color);
+    /*font-family: 'Montserrat';*/
+}
+
+.bottom-footer a {
+    text-decoration: underline;
+}
+
+.bottom-footer .row>div[class*="col-md-"]+div[class*="col-md-"] {
+    text-align: right;
+}
+
+/** MENU SIDEBAR **/
+.side-menu {
+    max-width: 505px;
+    width: 100%;
+    left: 0;
+    position: fixed;
+    z-index: 9;
+    padding: 40px 15px 40px 15px;
+    top: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 9999;
+    background-color: white;
+    color: #fff;
+    -webkit-overflow-scrolling: touch;
+    transform: translateX(-100%);
+    transition: transform .3s;
+}
+
+.sidebar-opened .side-menu {
+    transform: translateX(0);
+}
+
+/** MODAL DISCLAMERS **/
+div[id*="disclamersModal"] .modal-body {
+    padding: 35px;
+}
+
+div[id*="disclamersModal"]l .modal-body p {
+    font-weight: 300;
+}
+
+div[id*="disclamersModal"] .modal-body .btn-close {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    background-position: right;
+    margin-bottom: 65px;
+}
+
+div[id*="disclamersModal"] .modal-body .maserati-button {
+    margin-top: 3rem;
+}
+
+div[id*="disclamersModalLegal"] .modal-body p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+div[id*="disclamersModalLegal"] .modal-body h5 {
+    margin-bottom: 35px;
+}
+
+/** MODAL VIDEO BANNER **/
+div[id*="modalVideo"] .my-video-dimensions {
+    width: 100%;
+    height: 100%;
+}
+
+.vjs-theme-fantasy .vjs-play-progress,
+.vjs-theme-fantasy .vjs-play-progress:before {
+    background-color: var(--septenary-color);
+}
+
+.video-js .vjs-control-bar {
+    background-color: transparent !important;
+}
+
+div[id*="modalVideo"] .modal-body {
+    padding: 0;
+}
+
+div[id*="modalVideo"] .btn-close {
+    right: 15px;
+    position: absolute;
+    top: 50px;
+    z-index: 99999;
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+    opacity: 1;
+}
+
+/** *MENU DESKTOP */
+.menu-desktop {
+    max-width: 100%;
+    display: flex;
+    padding: 0;
+}
+
+.menu-desktop .menu-left {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    overflow: scroll;
+}
+
+.menu-desktop .menu-right {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu-desktop .header-side-menu .hamburger-menu {
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu-desktop .header-side-menu {
+    padding: 30px;
+}
+
+.menu-desktop .bar,
+.menu-desktop .bar:before,
+.menu-desktop .bar:after {
+    background: var(--quaternary-color);
+    width: 20px;
+}
+
+.menu-desktop .bar.animate {
+    background: rgba(255, 255, 255, 0) !important;
+}
+
+.menu-desktop .menu-left .maserati-menu {
+    padding: 15px 60px;
+}
+
+.menu-desktop .menu-left .maserati-menu .nav-item .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.menu-desktop .menu-left .maserati-menu .nav-item+.nav-item {
+    margin-top: 40px;
+}
+
+.menu-desktop .menu-left .maserati-menu .nav-item .nav-link {
+    color: var(--tertiary-color);
+    font-weight: 100;
+}
+
+.menu-desktop .menu-left .maserati-menu .nav-item.item-active .nav-link {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.menu-desktop .menu-left .maserati-menu .nav-item:hover .nav-link {
+    font-weight: 500;
+}
+
+.menu-desktop .menu-left .maserati-menu .nav-item:hover::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: calc(500px - 30px);
+    top: 0;
+    z-index: 0;
+}
+
+.menu-desktop .menu-right nav {
+    width: 100%;
+    height: 100%;
+    padding: 195px 130px;
+    padding: 0 130px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-desktop .menu-right nav:not(.menu-modelos) ul {
+    flex-direction: column;
+}
+
+.menu-desktop .menu-right nav:not(.menu-modelos) ul li+li {
+    margin-top: 35px;
+}
+
+
+.menu-desktop .menu-right nav:not(.menu-modelos) ul li a {
+    color: white;
+    font-size: 28px;
+}
+
+.menu-desktop .menu-right nav ul li a:focus-visible,
+.menu-desktop .menu-right nav ul li:focus-visible,
+.menu-desktop .menu-right nav ul li a:focus,
+.menu-desktop .menu-right nav ul li:focus {
+    outline: none !important;
+}
+
+.menu-desktop .menu-right nav:not(.menu-modelos) ul.items-navs:hover li a {
+    color: var(--tertiary-color);
+}
+
+
+.menu-desktop .menu-right nav:not(.menu-modelos) ul li a:hover {
+    color: white !important;
+}
+
+.nav-subitem.item-parent.link-active>a {
+    color: white !important;
+}
+
+.menu-desktop .menu-right nav:not(.menu-modelos) .maserati-menu--submenu {
+    margin-left: 70px !important;
+    padding: 45px 0 0 0 !important;
+    background: transparent;
+}
+
+/*.menu-right ul {
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all .5s ease;
+}
+
+.menu-right ul.show-right {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: all .5s ease;
+}*/
+
+.menu-desktop .menu-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+}
+
+.menu-desktop .menu-right .menu-modelos {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-desktop .menu-right .menu-modelos li {
+    flex: 0 0 50%;
+}
+
+.menu-desktop .menu-right .menu-modelos li:not(:nth-child(-n+2)) {
+    margin-top: 100px;
+}
+
+.menu-desktop .menu-right .menu-modelos li a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.menu-desktop .menu-right .menu-modelos li a img:first-child {
+    max-width: 195px;
+    margin-right: 25px;
+    min-height: 85px;
+    object-fit: contain;
+    max-height: 85px;
+    overflow: hidden;
+}
+
+.menu-desktop .menu-right .menu-modelos li a img:nth-child(2) {
+    max-width: 160px;
+    max-height: 20px;
+    margin: 0 auto 0 0;
+    overflow: hidden;
+}
+
+.menu-desktop img.fondo {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+.menu-desktop .menu-right ul {
+    z-index: 1;
+    margin: 0px !important;
+    list-style: none !important;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+
+}
+
+.menu-desktop .menu-right .maserati-menu--submenu {
+    background-color: #535353;
+    height: 100%;
+    width: 100%;
+    padding: 110px 130px !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu-desktop .menu-right .nav-subitem.accordion-header .maserati-menu--submenu {
+    display: block;
+}
+
+.menu-desktop .menu-right .nav-subitem.accordion-header>a:first-child {
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.menu-desktop .menu-right .nav-subitem.accordion-header>a:first-child[aria-expanded="true"] i {
+    transform: rotate(-90deg);
+    transition: all .5s ease;
+}
+
+.menu-left .maserati-datos-menu .maserati-social,
+.menu-left .maserati-datos-menu .maserati-extra,
+.menu-left .maserati-datos-menu .maserati-contact {
+    border: none !important;
+}
+
+.menu-left .foot-menu-desktop {
+    border-top: 1px solid var(--quaternary-color) !important;
+    margin-top: 35px;
+    padding-top: 20px;
+}
+
+.menu-left .maserati-datos-menu div:last-child *:first-child {
+    flex: auto;
+}
+
+.menu-left .maserati-datos-menu div:last-child {
+    text-align: center;
+}
+
+.menu-left .maserati-social {
+    padding-bottom: 0;
+}
+
+.menu-left .maserati-social p {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 28px;
+}
+
+.menu-left .maserati-contact {
+    padding-top: 0;
+}
+
+.menu-left .maserati-extra a span {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.menu-left .maserati-extra a {
+    margin-top: 40px;
+    color: var(--tertiary-color);
+    transition: all .5s ease;
+}
+
+.menu-left .maserati-extra a:hover {
+    color: var(--primary-color);
+    transition: all .5s ease;
+}
+
+.menu-left .maserati-contact {
+    flex-direction: column !important;
+}
+
+/** SPINER **/
+.spinner {
+    display: flex;
+    justify-content: center;
+}
+
+svg {
+    width: 100%;
+    max-width: 50px;
+    animation: rotate 3.6s linear infinite;
+}
+
+circle {
+    fill: none;
+    stroke: var(--septenary-color);
+    stroke-width: 8px;
+    stroke-dasharray: 300;
+    animation: outline 2s cubic-bezier(0.77, 0, 0.18, 1) infinite;
+}
+
+@keyframes outline {
+    0% {
+        stroke-dashoffset: 0;
+    }
+
+    50% {
+        stroke-dashoffset: 300;
+    }
+
+    100% {
+        stroke-dashoffset: 600;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(-1turn);
+    }
+}
+
+/** SIDEMENU MOBILE **/
+.header-side-menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid var(--quaternary-color);
+    padding: 15px 0;
+    margin-bottom: 15px;
+}
+
+.header-side-menu img {
+    max-width: 87px;
+}
+
+.header-side-menu .hamburger-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+}
+
+.side-menu #maserati-menu ul {
+    border: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.side-menu .accordion-item+.accordion-item {
+    border-top: 1px solid var(--quaternary-color) !important;
+}
+
+.side-menu #maserati-menu .accordion-item:first-child ul.maserati-menu--submenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.side-menu #maserati-menu .accordion-item .maserati-menu--submenu li:not(.item-modelo) {
+    max-width: 100%;
+    width: 100%;
+    flex: 0 0 100%;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+
+.side-menu #maserati-menu .accordion-item:first-child .maserati-menu--submenu .item-modelo {
+    max-width: 50%;
+    width: 50%;
+    flex: 0 0 50%;
+}
+
+.side-menu #maserati-menu .accordion-item:first-child .maserati-menu--submenu .item-modelo a {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.side-menu #maserati-menu .accordion-item:first-child .maserati-menu--submenu .item-modelo a img {
+    margin-bottom: 15px;
+}
+
+.side-menu .nav-item.accordion-header,
+.side-menu .nav-item.accordion-header a {
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.side-menu .nav-item.accordion-header a {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.side-menu .nav-item.accordion-header a i {
+    color: var(--primary-color);
+}
+
+.side-menu .nav-item.accordion-header a[aria-expanded="true"] i,
+.nav-subitem.accordion-header a[aria-expanded="true"] i {
+    transform: rotate(0deg);
+    transition: all .5s ease;
+}
+
+.side-menu .nav-item.accordion-header a[aria-expanded="false"] i,
+.nav-subitem.accordion-header a[aria-expanded="false"] i {
+    transform: rotate(0deg);
+    transition: all .5s ease;
+}
+
+.side-menu #maserati-menu .accordion-item .maserati-menu--submenu .maserati-menu--submenu {
+    margin-left: 15px;
+}
+
+.nav-subitem.accordion-header a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: var(--septenary-color);
+}
+
+.maserati-datos-menu div {
+    border-top: 1px solid var(--quaternary-color) !important;
+    padding: 15px 0;
+}
+
+.maserati-extra a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.maserati-extra a i {
+    margin-right: 15px;
+    font-size: 35px;
+    width: 30px;
+}
+
+.maserati-extra a+a {
+    margin-top: 15px;
+}
+
+.maserati-extra a span {
+    font-size: 14px;
+}
+
+.maserati-datos-menu .maserati-contact i {
+    width: 30px;
+}
+
+.maserati-datos-menu div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.maserati-datos-menu div:last-child *:first-child {
+    flex: 0 0 100%;
+}
+
+/** HOME **/
+.maserati-explore {
+    background-image: url('/wp-content/uploads/2022/08/fondo-maserati.jpg');
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.maserati-explore .container:first-child,
+.header-model {
+    text-align: center;
+}
+
+.maserati-explore .container:last-child a {
+    margin: 0 auto;
+}
+
+.header-model img {
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.header-model {
+    margin-bottom: 40px;
+}
+
+.swiper-single_banner__models,
+.swiper-single_banner__models_single {
+    text-align: center;
+}
+
+.swiper-single_banner__models .swiper-pagination-name,
+.swiper-single_banner__models_single .swiper-pagination-name {
+    display: initial;
+    border-bottom: 1px solid #ffc8453d;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.swiper-single_banner__models .swiper-wrapper,
+.swiper-single_banner__models_single .swiper-wrapper {
+    margin-top: 80px;
+}
+
+.swiper-single_banner__models .swiper-wrapper+.swiper-pagination,
+.swiper-single_banner__models_single .swiper-wrapper+.swiper-pagination,
+.swiper-waranty-motors .swiper-wrapper+.swiper-pagination {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 45px 0 50px 0;
+}
+
+.swiper-single_banner__models .swiper-slide,
+.swiper-single_banner__models_single .swiper-slide,
+.swiper-waranty-motors .swiper-slide {
+    min-height: 440px;
+}
+
+.swiper-pagination:not(.swiper-pagination-name) .swiper-pagination-bullet .name-bullet {
+    font-size: 0;
+}
+
+.swiper-pagination:not(.swiper-pagination-name) .pagination-name span::after {
+    display: none;
+}
+
+.inner-body_model {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+}
+
+.inner-body_model .model-info {
+    display: flex;
+}
+
+.inner-body_model .model-info>div[class*="model-"] {
+    display: flex;
+    align-items: center;
+    max-width: 395px;
+}
+
+.inner-body_model .model-info>div[class*="model-"]+div[class*="model-"] {
+    margin-left: 30px;
+}
+
+.inner-body_model p,
+.inner-body_model h3,
+.inner-body_model h6 {
+    margin-bottom: 0;
+}
+
+.inner-body_model .model-info .model-speed p {
+    flex: 0 0 110px;
+    text-align: left;
+    font-size: 18px;
+    line-height: normal;
+}
+
+.inner-body_model .model-slogan {
+    display: flex;
+    align-items: center;
+    flex: 0 0 180px;
+}
+
+.inner-body_model .model-info h3 {
+    font-weight: 600;
+}
+
+.inner-body_model .model-info h3 span:first-child {
+    font-size: 32px;
+}
+
+.inner-body_model .model-info h3 span {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.inner-body_model .model-info h3+h3 {
+    margin-left: 25px;
+}
+
+.inner-body_model .model-slogan h6 {
+    flex: 0 0 145px;
+    text-align: left;
+}
+
+.inner-body_model .model-slogan::after {
+    content: '';
+    display: inline-flex;
+    width: 1px;
+    height: 80px;
+    background: var(--septenary-color);
+    margin: 0 15px;
+}
+
+
+.inner-body_model .model-info .model-access a {
+    min-width: 260px;
+}
+
+.single-modelo #disclamersModal .modal-body p,
+.single-product #disclamersModal .modal-body p {
+    font-size: 16px;
+}
+
+.single-modelo #disclamersModal .modal-body .btn-close,
+.single-modelo #disclamersModal .modal-body h5,
+.single-product #disclamersModal .modal-body .btn-close,
+.single-product #disclamersModal .modal-body h5 {
+    margin-bottom: 35px;
+}
+
+.maserati-pre_owned {
+    min-height: 730px;
+    color: white;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.maserati-pre_owned h3 {
+    font-weight: 500;
+}
+
+.maserati-world {
+    background: var(--sextenary-color);
+}
+
+.maserati-world .container:first-child {
+    text-align: center;
+}
+
+.maserati-distribuidor .container:first-child {
+    text-align: center;
+}
+
+.maserati-box-information {
+    border: 1px solid var(--quaternary-color);
+    padding: 40px 25px;
+}
+
+.inner-box .info-block+.info-block {
+    border-top: 1px solid var(--quaternary-color);
+    padding-top: 20px;
+}
+
+.maserati-distribuidor .maserati-box-information p strong {
+    color: var(--primary-color);
+}
+
+.information-sucursal {
+    font-weight: 300;
+    font-size: 16px;
+    display: flex;
+    padding: 0 30px 20px 30px;
+}
+
+.information-sucursal i {
+    font-size: 20px;
+    height: 24px;
+    width: auto;
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+.information-sucursal+.information-sucursal {
+    border-top: 1px solid var(--quaternary-color);
+    padding-top: 20px;
+}
+
+.horarios div[class*="week"]+div[class*="week"] {
+    margin-top: 15px;
+}
+
+.horarios div[class*="week"] p:first-child {
+    font-weight: 500;
+}
+
+.horarios p,
+.horarios p span {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 0 !important;
+}
+
+.foot-box {
+    padding: 20px 30px 0 30px;
+}
+
+.foot-box a {
+    width: 100%;
+    max-width: 100%;
+}
+
+.foot-box a+a {
+    margin-top: 15px;
+}
+
+/** SINGLE MODELO **/
+.maserati-model_slider {
+    position: relative;
+}
+
+.maserati-model_slider .maserati-disclamers {
+    top: -15px;
+    position: relative;
+    background: white;
+    color: var(--quaternary-color);
+}
+
+.maserati-model_presentation {
+    padding: 150px 0 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 75%;
+    overflow: hidden;
+}
+
+.maserati-model_presentation p {
+    color: var(--quinary-color) !important;
+}
+
+.presentation_model {
+    text-align: center;
+}
+
+.model-inner-video video {
+    width: 100%;
+}
+
+.maserati-model_galeria .tiny-container h3 {
+    text-transform: initial;
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.maserati-model_galeria .tiny-container h3 span {
+    display: block;
+    font-family: var(--anko-font);
+    font-style: italic;
+    text-transform: initial;
+    font-size: 28px;
+    font-weight: normal;
+    color: var(--tertiary-color);
+}
+
+.maserati-model_galeria .tiny-container p {
+    font-weight: 100;
+    line-height: normal;
+}
+
+.single-modelo .maserati-shadow:before {
+    content: '';
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 65%);
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+#modelGallery .btn-close,
+#modelGalleryGrid .btn-close {
+    padding: 0;
+    color: #000;
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/0.8em auto no-repeat;
+    border: 0;
+    border-radius: 0;
+    opacity: 1;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    z-index: 9999;
+}
+
+#modelGallery .modal-body,
+#modelGalleryGrid .modal-body {
+    padding: 0;
+    background: black;
+}
+
+#modelGallery .modal-body .swiper-slide img,
+#modelGalleryGrid .modal-body .swiper-slide img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+#modelGallery .modal-body>.container:first-child,
+#modelGalleryGrid .modal-body>.container:first-child {
+    position: absolute;
+    z-index: 9;
+    margin: 0 auto;
+    left: 160px;
+    top: 90px;
+    right: 0;
+}
+
+#modelGallery .modal-body .container .emblema-absolute,
+#modelGalleryGrid .modal-body .container .emblema-absolute {
+    max-width: 120px;
+    height: 100%;
+    object-fit: contain;
+}
+
+#modelGallery .modal-body .swiper-slide h5,
+#modelGalleryGrid .modal-body .swiper-slide h5 {
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+    right: 0;
+    display: inline-block;
+    max-width: 265px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--quaternary-color);
+    padding-bottom: 10px;
+}
+
+#modelGallery .modal-body .swiper-pagination,
+#modelGallery .modal-body .swiper-pagination span,
+#modelGalleryGrid .modal-body .swiper-pagination,
+#modelGalleryGrid .modal-body .swiper-pagination span {
+    bottom: 70px;
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.maserati-model_caracteristicas {
+    margin-top: -170px;
+    padding-bottom: 130px;
+}
+
+.maserati-model_caracteristicas .swiper-wrapper.one-slider {
+    justify-content: center;
+}
+
+.maserati-model_motor {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 140px 0 110px 0;
+}
+
+.maserati-model_motor .inner-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 855px;
+}
+
+.shopping-tools {
+    width: 100%;
+    top: unset;
+    bottom: 0;
+    right: 0;
+    left: unset;
+    z-index: 99;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    max-width: 575px;
+    box-shadow: -2px 0px 10px #00000026;
+}
+
+.shopping-tools.moveBack {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    display: none;
+}
+
+.shopping-tools.move {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    display: block;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0
+    }
+}
+
+.listen-motor {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    color: var(--primary-color);
+    font-size: 30px;
+    position: relative;
+    left: 0;
+    transform: translateX(-125px);
+    bottom: -125px;
+}
+
+.listen-motor+p {
+    color: white !important;
+    font-size: 14px;
+    max-width: 150px;
+    text-align: center;
+}
+
+.listen-motor i {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.pulse-sound {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 150px;
+    left: 150px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    opacity: 0;
+    background-color: white;
+    border-radius: 100%;
+    -webkit-animation: wlb-flash 2s infinite ease-out;
+    -moz-animation: wlb-flash 2s infinite ease-out;
+    animation: wlb-flash 2s infinite ease-out;
+}
+
+.listen-motor i {
+
+    z-index: 9;
+}
+
+@keyframes wlb-flash {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0.0;
+    }
+
+    20% {
+        -webkit-transform: scale(0.2);
+        transform: scale(0.2);
+        opacity: 0.2;
+    }
+
+    40% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+
+    60% {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        opacity: 0.7;
+    }
+
+    80% {
+        -webkit-transform: scale(1.6);
+        transform: scale(1.6);
+        opacity: 0.2;
+    }
+
+    100% {
+        -webkit-transform: scale(1.7);
+        transform: scale(1.7);
+        opacity: 0.0;
+    }
+}
+
+.maserati-model_colection {
+    padding: 95px 0 0 0;
+}
+
+.maserati-model_colection .swiper-single_banner__models_single img,
+.swiper-waranty-motors img {
+    margin-bottom: 42px;
+}
+
+.maserati-model_colection .swiper-single_banner__models_single h2,
+.swiper-waranty-motors h2 {
+    font-size: 36px;
+    font-weight: 100;
+}
+
+.maserati-model_colection .swiper-single_banner__models_single h5,
+.swiper-waranty-motors h5 {
+    font-weight: 500;
+}
+
+.maserati-model_colection .swiper-single_banner__models_single h5 span,
+.swiper-waranty-motors h5 span {
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--secondary-color);
+}
+
+.maserati-model_slider .maserati-disclamers span,
+.maserati-model_slider .maserati-disclamers span i,
+.maserati-model_slider .maserati-disclamers span i::before {
+    color: var(--tertiary-color) !important;
+}
+
+
+.maserati-model_colection .pagination-name.swiper-pagination-bullet-active span,
+.swiper-waranty-motors .swiper-pagination-bullet-active span {
+    color: var(--primary-color);
+}
+
+.maserati-model_colection .pagination-name.swiper-pagination-bullet-active span::after {
+    background: var(--primary-color);
+}
+
+.maserati-model_colection .swiper-single_banner__models_single .swiper-pagination-name {
+    border-color: var(--tertiary-color);
+}
+
+.maserati-model_colection .version-info,
+.swiper-waranty-motors .version-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.maserati-model_colection .version-info .version-info_item,
+.swiper-waranty-motors .version-info .version-info_item {
+    position: relative;
+    padding: 15px 0 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.maserati-model_colection .version-info .version-info_item+.version-info_item::before,
+.swiper-waranty-motors .version-info .version-info_item+.version-info_item::before {
+    content: '';
+    width: 1px;
+    display: block;
+    height: 100%;
+    background: var(--quaternary-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.maserati-model_colection .version-info .version-info_item p,
+.swiper-waranty-motors .version-info .version-info_item p {
+    text-align: center;
+    font-size: 16px;
+    margin: 0 auto 0 auto;
+    line-height: normal;
+    font-weight: 300;
+    color: var(--primary-color);
+}
+
+.maserati-model_colection .version-info_item h5 {
+    font-weight: 500;
+}
+
+.maserati-model_colection .swiper-button-next,
+.maserati-model_colection .swiper-button-prev,
+.swiper-waranty-motors .swiper-button-next,
+.swiper-waranty-motors .swiper-button-prev {
+    background: rgba(182, 182, 182, 0.5);
+}
+
+.maserati-model_colection .swiper-pagination:not(.swiper-pagination-name) {
+    margin-bottom: 25px;
+}
+
+.maserati-model_colection .swiper-pagination:not(.swiper-pagination-name) .swiper-pagination-bullet {
+    border-color: var(--quaternary-color);
+}
+
+.maserati-model_colection .swiper-pagination:not(.swiper-pagination-name) .swiper-pagination-bullet-active {
+    background: var(--quaternary-color);
+}
+
+.maserati-model_colection .version_to_action .inner-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.maserati-model_colection .swiper-name-pagination {
+    display: none;
+}
+
+.maserati-model_colection .name-bullet {
+    color: var(--tertiary-color);
+}
+
+.maserati-configurador {
+    min-height: 850px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.maserati-configurador h3 {
+    line-height: normal;
+}
+
+.items-personalizables {
+    padding: 125px 0;
+}
+
+.items-personalizables img {
+    min-height: 470px;
+    max-height: 470px;
+    object-fit: cover;
+}
+
+.items-personalizables .row+.row {
+    margin-top: 80px;
+}
+
+.items-personalizables .row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.items-personalizables .row div[class*="col-md-"]:last-child {
+    padding: 0 0 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.items-personalizables .row:nth-child(even) div[class*="col-md-"]:last-child {
+    padding: 0 80px 0 0;
+}
+
+.items-personalizables .row div[class*="col-md-"]:last-child h3 {
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.items-personalizables .row div[class*="col-md-"]:last-child *+* {
+    margin-top: 40px;
+}
+
+.items-personalizables .row div[class*="col-md-"]:last-child * {
+    margin-bottom: 0;
+}
+
+.items-personalizables .row div[class*="col-md-"]:last-child h4 {
+    margin-top: 15px;
+    color: var(--tertiary-color);
+    font-size: 28px;
+}
+
+.items-personalizables .row div[class*="col-md-"]:last-child p {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.maserati-model_caracteristicas .inner-card {
+    display: flex;
+    background: var(--octonary-color);
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+}
+
+.maserati-model_caracteristicas .content-card {
+    position: relative;
+    padding: 0 60px;
+    color: white;
+}
+
+.maserati-model_caracteristicas .content-card h3 {
+    font-weight: 500;
+}
+
+.maserati-model_caracteristicas .content-card p {
+    font-weight: 300;
+    margin-bottom: 35px;
+    color: var(--quinary-color) !important;
+}
+
+.maserati-model_caracteristicas .content-card a {
+    font-size: 14px;
+}
+
+.maserati-model_caracteristicas .image-card {
+    flex: 0 0 55%;
+    margin-right: 15px;
+    min-width: 460px;
+}
+
+.maserati-model_caracteristicas .swiper-1_5 .swiper-slide a::after {
+    display: none;
+}
+
+div[id*="modelFeatures"] .modal-content {
+    background: var(--octonary-color);
+}
+
+div[id*="modelFeatures"] .modal-body {
+    padding: 0;
+}
+
+div[id*="modelFeatures"] .image-card {
+    flex: 0 0 55%;
+    max-width: 55%;
+}
+
+div[id*="modelFeatures"] .image-card img {
+    height: 100vh;
+    min-width: 810px;
+    object-fit: cover;
+    width: 100%;
+}
+
+div[id*="modelFeatures"] .inner-card {
+    display: flex;
+    align-items: center;
+}
+
+div[id*="modelFeatures"] .btn-close {
+    padding: 0;
+    color: #000;
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/0.8em auto no-repeat;
+    border: 0;
+    border-radius: 0;
+    opacity: 1;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    z-index: 9999;
+}
+
+div[id*="modelFeatures"] .content-card {
+    padding: 0 235px 0 100px;
+    padding: 0 10% 0 7%;
+    color: white;
+}
+
+div[id*="modelFeatures"] .content-card h3 {
+    font-weight: 500;
+}
+
+div[id*="modelFeatures"] .content-card h3 span {
+    font-weight: 400;
+}
+
+div[id*="modelFeatures"] #fraction {
+    bottom: 70px;
+    padding: 0 10% 0 7%;
+    flex: 0 0 45%;
+    width: 45%;
+    right: 0 !important;
+    left: inherit;
+    font-size: 14px;
+    text-align: left;
+}
+
+div[id*="modelFeatures"] #fraction span {
+    font-size: 14px;
+}
+
+div[id*="modelFeatures"] p {
+    color: var(--quinary-color) !important;
+}
+
+#modelGallery .modal-body {
+    background: black;
+}
+
+#modelGallery .modal-body .swiper-slide {
+    height: 100vh;
+}
+
+#modelGallery .modal-body .swiper-slide .inner-slide {
+    height: 100%;
+}
+
+#modelGallery .modal-body .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+#modelGallery .modal-body>.container:first-child {
+    left: 0;
+    top: 90px;
+    right: 0;
+    text-align: left;
+}
+
+#modelGallery .swiper-button-prev,
+#modelGallery .swiper-rtl .swiper-button-next {
+    left: 90px;
+}
+
+#modelGallery .swiper-button-next,
+#modelGallery .swiper-rtl .swiper-button-prev {
+    right: 90px;
+}
+
+#modelGallery .btn-close {
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1.2em auto no-repeat;
+    right: 70px;
+    top: 55px;
+}
+
+#modelGallery .modal-body .swiper-slide h5 {
+    bottom: 115px;
+    font-size: 22px;
+    z-index: 9;
+}
+
+#modelGallery .modal-body .swiper-pagination,
+#modelGallery .modal-body .swiper-pagination span {
+    bottom: 65px;
+}
+
+/** COMPARADOR **/
+#modalversion tbody,
+#modalversion td,
+#modalversion tfoot,
+#modalversion th,
+#modalversion thead,
+#modalversion tr {
+    display: block;
+}
+
+#modalversion tbody,
+#modalversion tbody td {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#modalversion tbody td p {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+#modalversion .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#modalversion table thead {
+    max-width: 260px;
+    max-height: 175px;
+    min-height: 175px;
+    background: #F2F1F0;
+    padding: 25px;
+    box-shadow: 0px 0px 6px 1px rgb(79 79 79 / 25%);
+    border-radius: 6px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modalversion table.in thead {
+    border: 2px solid #EBEBEB;
+    background: white;
+    box-shadow: none;
+}
+
+#modalversion table thead p {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 14px;
+}
+
+#modalversion table.empty thead {
+    cursor: pointer;
+}
+
+#modalversion table.empty {
+    color: var(--quaternary-color);
+}
+
+#modalversion table.empty tfoot {
+    display: none;
+}
+
+#modalversion table tbody {
+    margin-bottom: 32px;
+}
+
+#modalversion table tbody tr {
+    border-bottom: 1px solid rgba(182, 182, 182, 0.5);
+    padding: 5px 50px;
+    min-height: 63px;
+}
+
+#modalversion table tbody tr:first-child {
+    border-top: 1px solid rgba(182, 182, 182, 0.5);
+}
+
+#modalversion table tfoot tr+tr {
+    margin-top: 25px;
+}
+
+#modalversion .body-comparador {
+    position: relative;
+}
+
+.versus {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--primary-color);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 60px;
+}
+
+.versus span {
+    font-size: 15px;
+}
+
+.not-found,
+.cursor {
+    cursor: pointer;
+}
+
+.no-cursor,
+.no-link {
+    cursor: default;
+    pointer-events: none;
+}
+
+.mini-card {
+    max-height: 175px;
+    min-height: 175px;
+    padding: 25px;
+    border-radius: 6px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #EBEBEB;
+    background: white;
+    box-shadow: none;
+    flex-wrap: wrap;
+    transition: all .5s ease
+}
+
+#accordionModels .accordion-body .select-version {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 45px 0;
+}
+
+#accordionModels .accordion-item {
+    border: none;
+}
+
+#accordionModels .mini-card {
+    flex: 0 0 calc(33.333% - 25px);
+}
+
+#modalAllVersion .modal-body {
+    width: 1120px;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+#modalAllVersion .modal-body #accordionModels {
+    padding: 55px 0;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#modalAllVersion .modal-body {
+    padding: 0;
+}
+
+#accordionModels .accordion-button:not(.collapsed) {
+    color: var(--tertiary-color);
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#accordionModels .accordion-body {
+    padding: 0;
+}
+
+#accordionModels .accordion-body>h6:first-child,
+#accordionModels .accordion-button {
+    padding: 0 25px;
+}
+
+#accordionModels .accordion-item {
+    border-radius: 0;
+    padding: 0 100px;
+}
+
+#accordionModels .accordion-item+.accordion-item {
+    border-top: 1px solid rgba(182, 182, 182, 0.5);
+}
+
+#accordionModels .accordion-button[aria-expanded="false"] {
+    padding: 30px 25px;
+}
+
+#accordionModels .accordion-button[aria-expanded="true"] {
+    padding: 30px 25px 0 25px;
+}
+
+#modalAllVersion .btn-close,
+#modalversion .btn-close {
+    padding: 0;
+    color: #000;
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23444'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/0.8em auto no-repeat;
+    border: 0;
+    border-radius: 0;
+    opacity: 1;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    z-index: 9999;
+}
+
+#modalConfigVersion .btn-close {
+    padding: 0;
+    color: white;
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFF'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/0.8em auto no-repeat;
+    border: 0;
+    border-radius: 0;
+    opacity: 1;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    z-index: 9999;
+}
+
+#modalConfigVersion .container {
+    padding-bottom: 110px;
+}
+
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23444444'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.selected-version {
+    border-color: var(--primary-color);
+    transition: all .5s ease;
+}
+
+.body-comparador .icon-close {
+    position: absolute;
+    right: 90px;
+    font-size: 9px;
+    border: 1px solid var(--primary-color);
+    padding: 5px;
+    border-radius: 100%;
+    top: 20px;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.body-comparador .model-image,
+.body-comparador .col-md-6 {
+    position: relative;
+}
+
+#modalConfigVersion .modal-body figure {
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.emblema-modelo-conf {
+    position: absolute;
+    top: 50%;
+    z-index: 9;
+    max-width: 265px;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+#modalConfigVersion .modal-body h3 {
+    border-bottom: 2px solid var(--quaternary-color);
+    padding-bottom: 45px;
+    margin-bottom: 30px;
+}
+
+/**/
+/** ARCHIVE MODELOS */
+.maserati-grid-modelos {
+    padding: 60px 0;
+}
+
+.card-model {
+    border: 1px solid #B6B6B6;
+    padding: 32px 25px;
+    height: 100%;
+}
+
+.card-model img {
+    min-height: 185px;
+    object-fit: contain;
+    max-height: 185px;
+    margin-bottom: 25px;
+}
+
+.card-model h6 {
+    color: var(--tertiary-color);
+}
+
+.card-model h2 {
+    font-size: 20px;
+    color: var(--tertiary-color);
+    font-weight: 400;
+}
+
+.card-model p {
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 300;
+    margin-top: 25px;
+    min-height: 75px;
+    max-height: 75px;
+    overflow: hidden;
+}
+
+.card-model .maserati-button {
+    max-width: 260px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.maserati-archive-product .container>h3:first-child {
+    margin-bottom: 80px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.card-model .entry-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/** PRE OWNED **/
+.maserati-banner-shop {
+    position: relative;
+}
+
+.maserati-banner-shop .container {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    color: white;
+    transform: translateY(-50%);
+}
+
+.maserati-banner-shop .inner-container {
+    max-width: 285px;
+}
+
+.maserati-banner-shop h3 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.maserati-banner-shop h4 {
+    font-size: 28px;
+}
+
+.maserati-banner-shop .breadcrumbs-absolute {
+    top: 35px;
+    left: 0;
+    width: 100%;
+}
+
+.maserati-archive-product {
+    padding: 110px 0;
+}
+
+.woocommerce-widget-layered-nav-list {
+    padding: 0;
+    margin: 0;
+    padding: 4px 0;
+    list-style: none;
+}
+
+.woocommerce-widget-layered-nav-list a {
+    font-size: 16px;
+    color: var(--tertiary-color);
+    font-weight: 100;
+}
+
+.woocommerce-widget-layered-nav-list a span.count {
+    display: none;
+}
+
+.woocommerce-widget-layered-nav-list a:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f0c8";
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-right: 18px;
+    color: var(--tertiary-color);
+    font-size: 17px;
+    vertical-align: middle;
+}
+
+.woocommerce-widget-layered-nav-list .chosen a:before {
+    content: "\f14a" !important;
+    color: inherit !important;
+    position: relative !important;
+    font-weight: 900;
+    color: var(--primary-color) !important;
+}
+
+.sidebar-filter aside {
+    padding: 0;
+    border: 1px solid var(--quaternary-color);
+}
+
+.sidebar-filter aside section {
+    margin: 0;
+}
+
+.sidebar-filter aside section+section {
+    border-top: 1px solid var(--quaternary-color);
+}
+
+.sidebar-filter aside .widget-title {
+    border-bottom: 1px solid var(--quaternary-color);
+    padding: 15px;
+}
+
+.sidebar-filter aside section ul,
+.sidebar-filter aside section form {
+    padding: 15px;
+}
+
+.info-pre-owned {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    padding: 0 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.info-pre-owned p {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.info-pre-owned p:first-child {
+    flex: 0 0 40px;
+}
+
+.info-pre-owned p:nth-child(2) {
+    flex: 0 0 65px;
+}
+
+.info-pre-owned p+p {
+    border-left: 1px solid var(--primary-color);
+    padding-left: 10px;
+}
+
+.info-pre-owned p span {
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.woocommerce-loop-product__link:hover {
+    color: inherit;
+}
+
+.woocommerce-loop-product__link {
+    background: white;
+    float: left;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--quaternary-color);
+}
+
+.woocommerce-loop-product__link .woocommerce-loop-product__title {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 32px;
+    margin-bottom: 0;
+}
+
+.woocommerce-loop-product__link .product_subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center !important;
+}
+
+.woocommerce-loop-product__link .price {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.woocommerce-loop-product__link .price .maserati-disclamers {
+    top: -15px;
+    position: relative;
+    margin-left: 5px;
+}
+
+.woocommerce-loop-product__link .button_explorer {
+    padding: 0 20px;
+    margin: 25px 0 30px 0;
+}
+
+ul.products li.product img {
+    display: block;
+    min-height: 200px;
+    object-position: center;
+    object-fit: cover;
+    max-height: 200px;
+}
+
+.sidebar-filter .clear-filter {
+    margin: 35px auto 0 auto;
+}
+
+.widget_price_filter .ui-slider .ui-slider-handle {
+    width: 12px !important;
+    height: 12px !important;
+    background: var(--primary-color) !important;
+    top: 50% !important;
+    transform: translateY(-50%);
+    border-radius: 100%;
+    margin-top: 0 !important;
+}
+
+.widget_price_filter .ui-slider-horizontal .ui-slider-range {
+    height: 2px !important;
+}
+
+.widget_price_filter .ui-slider .ui-slider-range {
+    background: var(--primary-color) !important;
+}
+
+.widget_price_filter .ui-slider .ui-slider-handle:last-child {
+    margin-left: -0.6em !important;
+}
+
+.price_slider,
+.range_slider {
+    position: relative;
+    height: 0.25em;
+    border-radius: 0;
+    background: var(--quaternary-color);
+    height: 2px !important;
+    order: 1;
+}
+
+.range_label {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.range_label span {
+    font-size: 16px !important;
+    font-weight: 100;
+}
+
+.range_slider_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.range_slider_wrapper .range_slider_amount {
+    order: 0;
+}
+
+.maserati-filter-selected {
+    margin-bottom: 30px;
+}
+
+#tags-filter ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#tags-filter li {
+    font-size: 16px;
+    border-radius: 2px;
+    border: 1px solid var(--primary-color);
+    width: fit-content;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#tags-filter li a {
+    display: flex;
+}
+
+#tags-filter li i {
+    font-size: 8px;
+    margin-left: 8px;
+}
+
+ul.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+form[role="search"] {
+    position: relative;
+    margin-bottom: 55px;
+}
+
+form[role="search"] button[type="submit"] {
+    display: none;
+}
+
+.search-field {
+    width: 100%;
+    height: 55px;
+    border-radius: 0 !important;
+    background: transparent;
+    padding: 0 15px 0 55px !important;
+    font-size: 16px;
+    color: var(--quaternary-color) !important;
+}
+
+form[role="search"] i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--quaternary-color);
+}
+
+/** SINGLE PRE-OWNED **/
+.woocommerce-tabs.wc-tabs-wrapper {
+    width: 100%;
+    max-width: 740px;
+    margin: 90px auto 0 auto;
+}
+
+.carousel-gallery {
+    position: relative;
+}
+
+.pre-owned-gallery {
+    max-width: 740px;
+}
+
+.pre-owned-gallery .swiper-slide img {
+    max-height: 430px;
+    min-height: 430px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-gallery .swiper-button-next,
+.carousel-gallery .swiper-button-prev {
+    background: rgb(182 182 182 / 50%);
+}
+
+.pre-owned-gallery_thumbs {
+    max-width: 600px;
+    margin-top: 32px;
+}
+
+.pre-owned-gallery_thumbs .swiper-slide img {
+    max-height: 120px;
+    min-height: 120px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.woocommerce-tabs ul.tabs {
+    display: flex;
+    border-bottom: 2px solid var(--quinary-color);
+}
+
+.woocommerce-Tabs-panel table {
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+.woocommerce-Tabs-panel table tr td {
+    padding: 25px;
+}
+
+.woocommerce-Tabs-panel table tr td:first-child {
+    min-width: 210px;
+}
+
+.woocommerce-Tabs-panel table tr td:last-child {
+    font-weight: 300;
+    width: 100%;
+}
+
+.woocommerce-Tabs-panel table tr+tr {
+    border-top: 1px solid var(--quinary-color);
+}
+
+.woocommerce-Tabs-panel table {
+    display: flex;
+    width: 100%;
+    flex: 0 0 100%;
+}
+
+.woocommerce-Tabs-panel table tbody {
+    flex: 0 0 100%;
+}
+
+.woocommerce-tabs ul.tabs li a {
+    padding: 25px !important;
+}
+
+.tabs.wc-tabs li {
+    color: var(--tertiary-color);
+    font-weight: 300;
+    transition: all .5s ease;
+}
+
+.tabs.wc-tabs li.active {
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: all .5s ease;
+}
+
+.tabs.wc-tabs li::after {
+    content: '';
+    height: 2px;
+    background-color: transparent;
+    width: 100%;
+    display: block;
+    position: absolute;
+    transition: all .5s ease;
+}
+
+.tabs.wc-tabs li.active::after {
+    background-color: var(--primary-color);
+    transition: all .5s ease;
+}
+
+.related.products {
+    padding: 115px 0;
+}
+
+.related h3.title-related {
+    font-weight: 500;
+    margin-bottom: 65px;
+}
+
+.related ul[class*="columns-"] li.product {
+    width: 100% !important;
+}
+
+h1.product_title {
+    text-align: center;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 36px;
+    margin-top: 75px;
+}
+
+.single-product h1.product_title {
+    margin-top: 75px;
+}
+
+.product h5.price {
+    margin-bottom: 55px;
+}
+
+.product .summary.entry-summary {
+    margin-bottom: 125px;
+    ;
+}
+
+.product .summary.entry-summary .maserati-button+.maserati-button {
+    margin-top: 15px;
+}
+
+.product_subtitle {
+    margin-bottom: 32px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+/** MUNDO MASERATI **/
+.maserati-all-news {
+    padding: 115px 0 32px 0;
+}
+
+.maserati-all-news-button {
+    padding-bottom: 115px;
+}
+
+.maserati-all-news .container:nth-child(2) {
+    position: relative;
+}
+
+.maserati-all-news h3+h4 {
+    max-width: 550px;
+    font-size: 28px;
+    line-height: normal;
+}
+
+.post-grid .card-post-item {
+    min-height: 525px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+}
+
+.post-grid .card-post-item p {
+    min-height: 80px;
+}
+
+.post-grid .swiper-one-news .card-post-item img {
+    max-height: 625px;
+    overflow: hidden;
+    object-fit: cover;
+    height: 625px;
+}
+
+.post-grid .swiper-one-news .card-post-item p,
+.post-grid .swiper-one-news .card-post-item .content-post a,
+.post-grid .swiper-one-news .card-post-item .content-post h5:after {
+    display: none;
+}
+
+.post-grid .swiper-one-news .card-post-item .content-post {
+    position: absolute;
+    bottom: 0;
+    max-width: 40%;
+    padding: 0;
+    left: 25px;
+    bottom: 100px;
+}
+
+.post-grid .swiper-one-news .card-post-item>a:first-child:after {
+    content: '';
+    display: block;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(360deg, rgba(0, 0, 0, 0.65) -4.86%, rgba(0, 0, 0, 0) 40.97%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.post-grid .maserati-article-post-short {
+    justify-content: flex-start;
+    min-height: 365px;
+}
+
+.maserati-all-news.post-grid .maserati-article-post-short {
+    min-height: 525px;
+}
+
+.post-grid:not(.maserati-all-news) .maserati-article-post-short h5:after,
+.post-grid:not(.maserati-all-news) .maserati-article-post-short .content-post p,
+.post-grid:not(.maserati-all-news) .maserati-article-post-short .content-post a {
+    display: none;
+}
+
+.post-grid .swiper:not(.swiper-one-news) {
+    padding: 0 20px !important;
+}
+
+.post-grid .swiper:not(.swiper-one-news) .swiper-wrapper {
+    padding: 30px 0;
+}
+
+.post-grid .swiper:not(.swiper-one-news) article {
+    transform: scale(1);
+    transition: all .5s ease;
+}
+
+.post-grid .swiper:not(.swiper-one-news) article:hover {
+    transform: scale(1.1);
+    transition: all .5s ease;
+}
+
+.swiper-one-news .swiper-pagination {
+    position: absolute !important;
+    z-index: 9;
+    text-align: left;
+    padding: 0 20px;
+    bottom: 65px !important;
+}
+
+.swiper-one-news .swiper-pagination-bullet {
+    border-color: white !important;
+}
+
+.swiper-one-news .swiper-pagination-bullet-active {
+    background-color: white !important;
+}
+
+.post-grid .swiper-one-news .card-post-item .content-post h5 {
+    color: white !important;
+    font-size: 22px !important;
+
+}
+
+.maserati-all-news .swiper-all-news {
+    padding: 0 5px;
+}
+
+.post-grid .swiper-pagination {
+    position: relative;
+    bottom: inherit;
+    margin-top: 45px;
+}
+
+.post-grid .swiper-pagination-bullet {
+    border-color: var(--quaternary-color);
+}
+
+.post-grid .swiper-pagination-bullet-active {
+    background: var(--quaternary-color);
+}
+
+.maserati-all-news .swiper-button-next,
+.maserati-all-news .swiper-button-prev {
+    background: #b6b6b680;
+}
+
+.maserati-all-news .swiper-button-prev {
+    left: -100px;
+}
+
+.maserati-all-news .swiper-button-next {
+    right: -100px;
+}
+
+.maserati-page-mundo-maserati .background-block:nth-child(even) .row {
+    flex-direction: inherit;
+}
+
+.maserati-page-mundo-maserati .background-block:nth-child(odd) .row {
+    flex-direction: row-reverse;
+}
+
+.maserati-page-mundo-maserati .background-block h4 {
+    color: var(--tertiary-color);
+}
+
+/** NEWSLETTER **/
+.maserati-newsletter {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 720px;
+    display: flex;
+    align-items: center;
+}
+
+.maserati-newsletter h3 {
+    font-weight: 500;
+    margin-bottom: 85px;
+}
+
+.maserati-newsletter form label {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.maserati-newsletter form input[type="email"] {
+    height: 48px;
+    border-radius: 0;
+    padding: 0 15px;
+    width: 100%;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.maserati-newsletter form input[type="submit"] {
+    margin-top: 50px;
+    margin-bottom: 15px;
+    background: transparent;
+    border-radius: 0;
+    border-color: white;
+}
+
+.maserati-newsletter form input[type="submit"]:hover {
+    background-color: var(--septenary-color) !important;
+    border-color: var(--septenary-color) !important;
+}
+
+.wpcf7-not-valid-tip {
+    font-size: 14px;
+}
+
+.wpcf7-response-output {
+    margin: 0;
+    font-size: 14px;
+    color: white;
+}
+
+.wpcf7-spinner {
+    display: none;
+}
+
+/** SINGLE POST **/
+.single main p {
+    color: var(--primary-color);
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.single .entry-content>.medium-container p:first-child {
+    margin-bottom: 65px;
+}
+
+.single h1 {
+    max-width: 700px;
+    margin: auto;
+    letter-spacing: normal;
+    font-size: 36px;
+    line-height: 43px;
+}
+
+.single.maserati-cat-lanzamientos h1 {
+    max-width: 615px;
+}
+
+.single .post_title {
+    margin-top: 120px;
+}
+
+.single .post_title::after {
+    content: '';
+    background: rgba(12, 35, 64, 0.25);
+    height: 2px;
+    width: 100%;
+    display: block;
+    margin: 35px auto 50px auto;
+}
+
+.single.maserati-cat-lanzamientos .post_title::after {
+    width: 80%;
+}
+
+.single .medium-container {
+    margin: 75px auto;
+}
+
+.related-post {
+    background: var(--sextenary-color);
+    padding: 115px 0;
+}
+
+.single .entry-content h2 {
+    font-family: var(--everett-font);
+    font-weight: 500;
+    font-style: normal;
+    color: var(--primary-color);
+    font-size: 28px;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.single .entry-content h3 {
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.single .entry-content strong {
+    font-weight: 500;
+}
+
+/** ARCHIVE POST **/
+.paginator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 100px;
+}
+
+.pagination {
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination .nav-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 100px;
+}
+
+.paginator .page-numbers span {
+    display: none;
+}
+
+.paginator .page-numbers,
+.pagination .page-numbers {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    border: 1px solid var(--quaternary-color);
+    border-radius: 2px;
+    color: var(--tertiary-color);
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paginator .page-numbers.current,
+.pagination .page-numbers.current {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.maserati-grid-news {
+    padding: 120px 0;
+}
+
+.foot-fuoriserie p {
+    max-width: 540px;
+    text-align: left;
+    margin: 0 auto;
+    font-weight: 300;
+    color: var(--secondary-color);
+}
+
+.maserati-page-noticias-maserati .container {
+    position: relative;
+}
+
+.archive.category .row div[class*="col-md-"]:not(:nth-child(-n+3)) {
+    margin-top: 25px;
+}
+
+.archive.category article {
+    transform: scale(1);
+    transition: all .5s ease;
+}
+
+.archive.category article:hover {
+    transform: scale(1.05);
+    transition: all .5s ease;
+}
+
+.archive.category .category-post .container form+.row {
+    margin-bottom: 50px;
+}
+
+.archive.category .category-post .container form+.row>div[class*="col-md"]:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.archive.category .category-post .container form+.row>div[class*="col-md"]:last-child form {
+    width: fit-content;
+    /**/
+}
+
+.archive.category-carreras .content-post p,
+.archive.category-carreras .content-post a,
+.archive.category-carreras .content-post h5::after,
+.archive.category-partners .content-post p,
+.archive.category-partners .content-post a,
+.archive.category-partners .content-post h5::after {
+    display: none !important;
+}
+
+.archive.category-carreras article,
+.archive.category-partners article {
+    min-height: 385px !important;
+}
+
+.archive.category-carreras .card-post-item img,
+.archive.category-partners .card-post-item img {
+    min-height: 240px;
+    object-fit: cover;
+}
+
+.swiper-button-next-news {
+    right: -100px;
+    left: auto;
+}
+
+.swiper-button-prev-news {
+    left: -100px;
+    right: auto;
+}
+
+.swiper-button-prev-news,
+.swiper-button-next-news {
+    background: #b6b6b680;
+    color: white;
+    width: 67px;
+    height: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    z-index: 10;
+    /**/
+}
+
+.swiper-button-next-news:after,
+.swiper-button-prev-news:after {
+    font-size: 14px;
+}
+
+.swiper-button-prev-news:after {
+    content: 'prev';
+}
+
+.swiper-button-next-news:after,
+.swiper-button-prev-news:after {
+    font-family: swiper-icons;
+    font-size: 14px;
+    text-transform: none !important;
+    letter-spacing: 0;
+    text-transform: none;
+    font-variant: initial;
+    line-height: 1;
+}
+
+.swiper-button-next-news:after {
+    content: 'next';
+}
+
+/** GARANTÍA **/
+.maserati-motors-waranty .tiny-container h3 {
+    margin-bottom: 35px;
+}
+
+.swiper-waranty-motors .swiper-pagination-bullet {
+    border: 1px solid var(--quaternary-color);
+}
+
+.swiper-waranty-motors .swiper-pagination-bullet-active {
+    background: var(--quaternary-color);
+}
+
+.maserati-motors-waranty .swiper-button-prev,
+.maserati-motors-waranty .swiper-rtl .swiper-button-next,
+.maserati-motors-waranty .swiper-button-next,
+.maserati-motors-waranty .swiper-rtl .swiper-button-prev {
+    top: 27%;
+}
+
+.maserati-garantia_motor {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 140px 0 110px 0;
+}
+
+.maserati-garantia_motor .title-line {
+    max-width: 280px;
+    margin-bottom: 50px;
+}
+
+.masertai-motor-sketch {
+    max-width: 750px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.masertai-motor-sketch img {
+    display: block;
+    opacity: 1;
+    height: auto;
+    transition: .6s ease;
+    width: 100%;
+    position: absolute;
+    z-index: 12;
+}
+
+.masertai-motor-sketch:hover img {
+    opacity: 0;
+}
+
+.masertai-motor-sketch:hover img+img {
+    opacity: 1;
+}
+
+.masertai-motor-sketch img+img {
+    display: block;
+    opacity: 0;
+    position: relative;
+    z-index: 10;
+}
+
+.maserati-garantia_motor .listen-motor {
+    bottom: 165px;
+}
+
+.maserati-garantia_motor .listen-motor+p {
+    position: absolute;
+    top: 130px;
+}
+
+.maserati-garantia_motor .pulse-on_off {
+    position: relative;
+    max-height: 190px;
+}
+
+.maserati-news-featured .row div[class*="col-md-"]:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.maserati-news-featured .row div[class*="col-md-"]:first-child p {
+    margin-bottom: 65px;
+}
+
+.maserati-details-motors .tiny-container h4,
+.maserati-gallery-waranty .tiny-container h4 {
+    margin-bottom: 80px;
+}
+
+.maserati-details-motors .tiny-container p {
+    margin-bottom: 120px;
+}
+
+.maserati-lab-waranty .tiny-container p {
+    margin-bottom: 120px;
+}
+
+.maserati-page-garantia #modelGallery .modal-body .swiper-slide .inner-slide {
+    text-align: center;
+}
+
+.maserati-page-garantia #modelGallery .modal-body .swiper-slide img {
+    width: fit-content;
+    height: 100%;
+
+}
+
+.maserati-extended-waranty {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 720px;
+    display: flex;
+    align-items: center;
+}
+
+.maserati-presentation-waranty {
+    padding: 120px 0;
+}
+
+.maserati-presentation-waranty .maserati-button {
+    margin-top: 70px;
+}
+
+.maserati-trayecto-waranty {
+    padding: 112px 0;
+}
+
+.maserati-trayecto-waranty .row div[class*="col-md"]:last-child,
+.maserati-tranquilidad-waranty .row div[class*="col-md"]:last-child,
+.maserati-waranty-model .row div[class*="col-md"]:last-child {
+    padding-left: 72px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.maserati-trayecto-waranty .row div[class*="col-md"]:last-child p {
+    line-height: 24px;
+}
+
+.maserati-trayecto-waranty .row div[class*="col-md"]:last-child h3 {
+    margin-bottom: 25px;
+}
+
+.maserati-trayecto-waranty .row div[class*="col-md"]:first-child {
+    padding-right: 0;
+}
+
+.items-waranty-year {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    text-align: center;
+    margin-bottom: 65px;
+
+}
+
+.items-waranty-year figure img {
+    max-height: 55px;
+    margin-bottom: 25px;
+}
+
+.items-waranty-year figure {
+    flex: 0 0 calc(100% / 3);
+}
+
+.items-waranty-year figure p {
+    font-size: 16px;
+}
+
+.items-waranty-year figure h5 {
+    font-size: 20px;
+}
+
+.maserati-programa-waranty {
+    padding: 125px 0;
+    background-color: white;
+}
+
+.maserati-programa-waranty .row div[class*="col-md"]:last-child {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.maserati-tranquilidad-waranty {
+    padding: 125px 0;
+    background-color: white;
+}
+
+.content-with-disclamers {
+    font-size: 17px;
+}
+
+.maserati-waranty-model .container {
+    padding: 130px 0;
+}
+
+.maserati-waranty-model .fullwidth:nth-child(odd) .row {
+    flex-direction: row-reverse;
+}
+
+.maserati-waranty-model .fullwidth:nth-child(odd) .row div[class*="col-md"]:last-child {
+    padding-left: 15px;
+    padding-right: 72px;
+}
+
+.maserati-object-cover img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/** PROGRAMA EXTENSIÓN MASERATI **/
+.maserati-presentation-programa {
+    padding: 115px 0;
+}
+
+.maserati-presentation-programa .tiny-container+.container {
+    margin-top: 60px;
+}
+
+.maserati-presentation-programa .tiny-container h3 {
+    max-width: 85%;
+    margin: 0 auto 25px auto;
+}
+
+.maserati-presentation-programa .tiny-container p {
+    font-weight: 300;
+}
+
+.maserati-tipos-garantias {
+    padding: 115px 0;
+}
+
+.maserati-tipos-garantias .row div[class*="col-md-"]:nth-child(odd) {
+    padding-right: 80px;
+}
+
+.maserati-tipos-garantias .row div[class*="col-md-"]:nth-child(even) {
+    padding-left: 20px;
+}
+
+.maserati-tipos-garantias .card-item-waranty {
+    border: 1px solid var(--quaternary-color);
+    border-radius: 4px;
+    padding: 50px 85px;
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.maserati-tipos-garantias .card-item-waranty h5 {
+    font-size: 20px;
+}
+
+.maserati-tipos-garantias .card-item-waranty p {
+    margin-bottom: 0;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.maserati-tipos-garantias .table-waranty {
+    margin-top: 0;
+}
+
+.table-waranty {
+    margin-top: 75px;
+    font-size: 16px;
+}
+
+.table-waranty thead h3 {
+    font-size: 25px;
+    min-height: 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.table-waranty tbody strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.table-waranty td {
+    padding: 25px;
+}
+
+.table-waranty tbody tr {
+    border-top: 1px solid rgb(182 182 182 / 50%);
+}
+
+.maserati-mejores-vehiculos {
+    padding: 120px 0;
+}
+
+.maserati-mejores-vehiculos p,
+.maserati-mejores-vehiculos ul {
+    font-size: 18px;
+}
+
+.maserati-mejores-vehiculos .row div[class*="col-md"]:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.background-block {
+    padding: 115px 0;
+}
+
+.background-block:nth-child(odd) .row div[class*="col-md"]:first-child {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 94px;
+}
+
+.background-block:nth-child(even) .row {
+    flex-direction: row-reverse;
+}
+
+.background-block:nth-child(even) .row div[class*="col-md"]:first-child {
+    padding-right: 15px;
+    padding-left: 94px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.background-block h3 {
+    margin-bottom: 25px;
+    line-height: normal;
+    color: var(--primary-color);
+}
+
+.background-block p {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: normal;
+    line-height: 24px;
+}
+
+/** GARANTIA MC20 **/
+.maserati-page-garantia-extendida-mc20 .items-personalizables {
+    background: white;
+}
+
+.maserati-page-garantia-extendida-mc20 .background-block:nth-child(even) .row div[class*="col-md"]:first-child {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 94px;
+    padding-left: 15px;
+}
+
+.maserati-page-garantia-extendida-mc20 .background-block:nth-child(odd) .row {
+    flex-direction: row-reverse;
+}
+
+.maserati-page-garantia-extendida-mc20 .background-block:nth-child(even) .row {
+    flex-direction: inherit;
+}
+
+.maserati-page-garantia-extendida-mc20 .background-block:nth-child(odd) .row div[class*="col-md"]:first-child {
+    padding-right: 15px;
+    padding-left: 94px;
+}
+
+.maserati-page-garantia-extendida-mc20 .maserati-presentation-programa {
+    padding: 115px 0 0 0;
+}
+
+.maserati-page-garantia-extendida-mc20 .maserati-presentation-programa h4 {
+    margin-top: 75px;
+}
+
+/** MANTENIMIENTO **/
+.maserati-gallery {
+    padding: 125px 0;
+}
+
+.maserati-gallery h4 {
+    margin-bottom: 105px;
+}
+
+.maserati-presentation-programa .container+.tiny-container {
+    margin-top: 130px;
+}
+
+.maserati-page-mantenimiento .maserati-presentation-programa p {
+    font-weight: 100;
+}
+
+.maserati-page-mantenimiento .maserati-presentation-programa h3 {
+    max-width: 90%;
+}
+
+/** 404 **/
+.error-404 {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.error-404 .container:first-child>.row {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.error-404 h1 {
+    font-size: 80px;
+    font-weight: 500;
+    color: var(--quinary-color);
+    margin-bottom: 25px;
+}
+
+.error-404 h4 {
+    color: var(--quinary-color);
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.error-404 h4 span {
+    display: block;
+    font-family: var(--anko-font);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 28px;
+
+}
+
+.enlaces-404 {
+    margin-top: 75px;
+    ;
+}
+
+.enlaces-404 p {
+    font-weight: 100;
+}
+
+.enlaces-404 ul {
+    list-style: none;
+    color: var(--quinary-color);
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+}
+
+.enlaces-404 ul li+li {
+    margin-left: 40px;
+}
+
+.enlaces-404 ul li a {
+    text-decoration: underline;
+}
+
+/** MERCHANDESIGN **/
+.maserati-page-merchandesign .maserati-fit-banner h1 {
+    font-size: 36px;
+    font-weight: 100 !important;
+}
+
+.img-zoom {
+    position: relative;
+    overflow: hidden;
+}
+
+.maserati-page-merchandesign .banner-middle .fullwidth img {
+    transform: scale(.6);
+    transition: all .5s ease;
+}
+
+.img-zoom img {
+    transform: scale(6);
+    transform-origin: 395px 53%;
+}
+
+.maserati-page-merchandesign .maserati-presentation-programa h4 {
+    max-width: 380px;
+    margin: 0 auto 200px auto;
+}
+
+.maserati-page-merchandesign .maserati-presentation-programa .tiny-container+.container,
+.maserati-page-merchandesign .maserati-presentation-programa .container+.tiny-container {
+    margin-top: 100px;
+}
+
+.banner-middle {
+    position: relative;
+}
+
+.banner-middle .tiny-container {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+}
+
+.maserati-page-merchandesign .maserati-gallery h4 {
+    margin-bottom: 105px;
+    font-size: 28px;
+    color: var(--tertiary-color);
+}
+
+.maserati-merchandesign-catalogo {
+    padding-bottom: 115px;
+}
+
+.maserati-merchandesign-catalogo h3 {
+    margin-bottom: 70px;
+}
+
+.maserati-merchandesign-catalogo a+a {
+    margin-top: 15px;
+}
+
+/** CONTACTO MERCHANDESIGN **/
+.maserati-page-contacto-merchandesign .maserati-fit-banner h1 {
+    font-size: 36px;
+    font-weight: 100 !important;
+}
+
+.maserati-page-contacto-merchandesign .maserati-form {
+    padding: 125px 0;
+}
+
+/** CONTACTO PAGE **/
+
+.maserati-page-contacto .maserati-fit-banner h1 {
+    font-size: 36px;
+    font-weight: 100 !important;
+}
+
+.maserati-page-contacto .maserati-form {
+    padding: 125px 0;
+}
+
+/** MODAL SUCCESS**/
+#formSuccess img {
+    max-width: 64px;
+    max-height: 64px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 45px;
+}
+
+#formSuccess h3 {
+    text-align: center;
+    font-weight: 500;
+    color: var(--primary-color);
+    font-size: 28px;
+}
+
+#formSuccess p {
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+    font-weight: 300;
+    color: var(--primary-color);
+}
+
+#formSuccess .modal-body {
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+
+#formSuccess .btn-close {
+    padding: 0;
+    color: #000;
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23444'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/0.8em auto no-repeat;
+    border: 0;
+    border-radius: 0;
+    opacity: 1;
+    position: absolute;
+    right: -30px;
+    top: 30px;
+    z-index: 9999;
+}
+
+#formSuccess .modal-content {
+    background: white;
+    box-shadow: 3px 3px 5px #00000026;
+    border: 1px solid #f7f7f7de;
+}
+
+/** BUTTONS FIXED **/
+.buttons-fix {
+    position: fixed;
+    right: 50px;
+    top: 50%;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons-fix a {
+    width: 60px;
+    height: 60px;
+    background: var(--quaternary-color);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-size: 1.7rem;
+    transition: all .5s ease;
+}
+
+.buttons-fix ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.buttons-fix a:hover {
+    background: var(--primary-color);
+    color: white;
+    transition: all .5s ease;
+}
+
+.buttons-fix a+a,
+.buttons-fix li+li {
+    margin-top: 22px;
+}
+
+.buttons-fix .tooltip-hover {
+    position: absolute;
+    left: calc(-100% - 80px);
+    filter: drop-shadow(4px 20px 8px rgba(0, 0, 0, 0.01)) drop-shadow(2px 11px 7px rgba(0, 0, 0, 0.05)) drop-shadow(1px 5px 5px rgba(0, 0, 0, 0.09)) drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.1)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
+    padding: 20px;
+    background: var(--sextenary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+    min-width: 120px;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    /*transform: scaleX(0);*/
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: right;
+    transition: all .5s ease;
+}
+
+.buttons-fix a:hover .tooltip-hover {
+    /*transform: scaleX(1);*/
+    opacity: 1;
+    visibility: visible;
+    color: var(--primary-color);
+    transition: all .5s ease;
+}
+
+/** FORMS **/
+.maserati-form label {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.maserati-form input[type="text"],
+.maserati-form input[type="email"],
+.maserati-form input[type="url"],
+.maserati-form input[type="password"],
+.maserati-form input[type="search"],
+.maserati-form input[type="number"],
+.maserati-form input[type="tel"],
+.maserati-form input[type="range"],
+.maserati-form input[type="date"],
+.maserati-form input[type="month"],
+.maserati-form input[type="week"],
+.maserati-form input[type="time"],
+.maserati-form input[type="datetime"],
+.maserati-form input[type="datetime-local"],
+.maserati-form input[type="color"],
+.maserati-form select {
+    color: var(--primary-color);
+    padding: 3px;
+    height: 42px;
+    width: 100%;
+    border-radius: 0;
+    border: 1px solid var(--quaternary-color);
+    font-size: 16px;
+    padding: 0 15px;
+}
+
+.maserati-form input::placeholder {
+    color: var(--tertiary-color);
+}
+
+
+.maserati-form textarea {
+    color: var(--primary-color);
+    padding: 3px;
+    width: 100%;
+    border-radius: 0;
+    border: 1px solid var(--quaternary-color);
+    font-size: 16px;
+    padding: 15px;
+}
+
+.maserati-form .wpcf7-checkbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.maserati-form .wpcf7-checkbox label,
+.maserati-form .wpcf7-checkbox label span {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.maserati-form .wpcf7-checkbox .wpcf7-list-item {
+    margin-left: 0;
+}
+
+.maserati-form [type="checkbox"],
+.maserati-form [type="radio"] {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.maserati-form .row+.row:not(:nth-last-child(3)) {
+    margin-top: 55px;
+}
+
+.maserati-form form .row:nth-last-child(3) .wpcf7-checkbox label span {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.maserati-form span[data-name="checkbox_terms"] span,
+.maserati-form span[data-name="checkbox_promociones"] span {
+    font-size: 14px;
+}
+
+input[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+}
+
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    border: 1px solid var(--quaternary-color);
+    border-radius: 3px;
+    background-color: white;
+}
+
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid var(--primary-color);
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 6px;
+}
+
+input[type=checkbox]:checked:before {
+    border-color: var(--primary-color);
+}
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white !important;
+    border-color: var(--primary-color);
+    border-radius: 0;
+}
+
+input[type="submit"]:hover {
+    border-color: var(--septenary-color);
+}
+
+.maserati-form input[aria-invalid="true"] {
+    border-color: var(--error);
+}
+
+.wpcf7-not-valid-tip {
+    color: var(--error);
+}
+
+.maserati-form .wpcf7-checkbox.wpcf7-not-valid input[type=checkbox]:before {
+    border-color: var(--error);
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output {
+    border-color: var(--septenary-color);
+    background: var(--septenary-color);
+}
+
+.maserati-form fieldset .row {
+    display: flex;
+    justify-content: center;
+}
+
+.maserati-form .row.submit div[class*="col-md-"] {
+    display: flex;
+    justify-content: center;
+}
+
+/** COTIZAR MODELOS **/
+.maserati-page-cotizador-modelos .maserati-form {
+    padding: 110px 0;
+}
+
+/** COTIZAR PREOWNED **/
+.maserati-page-cotizador-pre-owned .maserati-form {
+    padding: 110px 0;
+}
+
+form .card-maserati-PO {
+    border: 2px solid #b6b6b6;
+    border-radius: 4px;
+    padding: 32px;
+    margin: 0 0 55px 0;
+}
+
+.card-maserati-PO img {
+    min-height: 222px;
+    object-fit: cover;
+}
+
+.card-maserati-PO .row div[class*="col-md-"]:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/** STEPS FORM **/
+.cf7mls-btns {
+    margin-top: 120px;
+}
+
+.cf7mls_next.action-button,
+.cf7mls_back.action-button {
+    margin: 0;
+    height: 50px;
+    padding: 0 16px;
+    font-size: 14px;
+    display: flex;
+    font-weight: normal;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    background: transparent;
+    border-radius: 0;
+    transition: all .5s ease;
+}
+
+.cf7mls_next.action-button::after {
+    content: '\f061';
+    font-family: 'FontAwesome';
+    margin-left: 10px;
+}
+
+.cf7mls_back.action-button::before {
+    content: '\f060';
+    font-family: 'FontAwesome';
+    margin-right: 10px;
+}
+
+.cf7mls_back {
+    color: var(--primary-color) !important;
+}
+
+.cf7mls_back:hover {
+    color: var(--septenary-color) !important;
+}
+
+.cf7mls-btns .cf7mls_next.action-button:hover,
+.cf7mls-btns .cf7mls_back.action-button:hover {
+    color: var(--septenary-color);
+    opacity: 1;
+    transition: all .5s ease;
+}
+
+.cf7mls-btns {
+    max-width: 550px;
+    margin: 115px auto 0 auto;
+}
+
+.cf7mls_next.action-button.sending img {
+    display: inline-block;
+    position: absolute;
+    right: -3px;
+    display: none;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+    border-color: #46b450;
+    background: #46b450;
+    display: none !important;
+}
+
+ul[data-bg-style-bar="navigation_horizontal_round"] li:before,
+ul[data-bg-style-bar="navigation_horizontal_round"] li:before {
+    width: 48px !important;
+    line-height: 48px !important;
+    height: 48px !important;
+
+}
+
+ul[data-bg-style-bar="navigation_horizontal_round"] li.active:before {
+    background: var(--primary-color) !important;
+}
+
+ul[data-bg-style-bar="navigation_horizontal_round"] li .cf7_mls_steps_item_icon,
+ul[data-bg-style-bar="navigation_horizontal_round"] li .cf7_mls_steps_item_icon {
+    line-height: 48px !important;
+    margin-left: 0 !important;
+    height: 48px !important;
+    width: 48px !important;
+    transform: translateX(-50%);
+
+}
+
+ul[data-bg-style-bar="navigation_horizontal_round"] li:after,
+ul[data-bg-style-bar="navigation_horizontal_round"] li:after {
+    content: '';
+    width: 100% !important;
+    height: 2px !important;
+    background: var(--quaternary-color) !important;
+    position: absolute;
+    left: -43% !important;
+    top: 25px !important;
+    z-index: -1;
+    margin-left: 0 !important;
+    transition: all .5s ease;
+}
+
+ul[data-bg-style-bar="navigation_horizontal_round"] li.current:after,
+ul[data-bg-style-bar="navigation_horizontal_round"] li.active:after {
+    background: var(--primary-color) !important;
+    transition: all .5s ease;
+}
+
+ul[data-bg-style-bar="navigation_horizontal_round"] li.current+li::after {
+    background: var(--quaternary-color) !important;
+    background: linear-gradient(90deg, rgba(12, 35, 64, 1) 0%, rgba(12, 35, 64, 1) 20%, rgba(182, 182, 182, 1) 20%, rgba(182, 182, 182, 1) 100%) !important;
+    transition: all .5s ease;
+}
+
+.wpcf7-form span.cf7_mls_check svg {
+    animation: auto;
+}
+
+ul[data-bg-style-bar="navigation_horizontal_round"] li,
+ul[data-bg-style-bar="navigation_horizontal_round"] li {
+    pointer-events: none;
+    cursor: default;
+}
+
+.cf7mls_bar_style_navigation_horizontal_squaren.cf7mls_bar_style_text_vertical,
+.cf7mls_bar_style_navigation_horizontal_round.cf7mls_bar_style_text_vertical {
+    margin: 0 auto 100px auto;
+    max-width: 670px
+}
+
+ul[data-bg-style-bar="navigation_horizontal_round"] li:nth-child(2) .cf7mls_progress_bar_title,
+ul[data-bg-style-bar="navigation_horizontal_round"] li .cf7mls_progress_bar_title,
+ul[data-bg-style-bar="navigation_horizontal_round"] li.current .cf7mls_progress_bar_title {
+    font-weight: 100;
+    font-size: 20px;
+    line-height: normal;
+    margin: 15px 0 0 0;
+}
+
+.row.submit+p {
+    max-width: 550px;
+    margin: 120px auto 0 auto;
+}
+
+.fieldset-cf7mls-wrapper div.wpcf7-validation-errors {
+    background: var(--error);
+    border-color: var(--error) !important;
+}
+
+.fieldset-cf7mls-wrapper div.wpcf7-validation-errors .wpcf7-icon-wraning {
+    fill: white;
+    animation: auto;
+}
+
+.fieldset-cf7mls-wrapper div.wpcf7-validation-errors {
+    color: white !important;
+}
+
+/** PAGE CONFIGURADOR **/
+.maserati-config-terms {
+    padding: 55px 0;
+}
+
+.maserati-config-terms a {
+    text-decoration: underline;
+}
+
+/** CALL TO ACTION MODALS **/
+.button-call_to_action {
+    padding: 30px 0;
+    box-shadow: 0px 0px 6px 1px rgb(79 79 79 / 25%);
+    background: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.button-call_to_action a {
+    min-width: 360px;
+    justify-content: space-between;
+    box-shadow: 0px 0px 6px 1px rgba(79, 79, 79, 0.25);
+}
+
+/** PAGE NUESTRA HISTORIA **/
+.maserati-history_presentation {
+    padding: 115px 0;
+}
+
+.maserati-history_presentation img {
+    mix-blend-mode: luminosity;
+    margin-top: 55px;
+}
+
+.maserati-history_presentation .container,
+.maserati-history_presentation .micro-container {
+    margin-top: 150px;
+}
+
+.more-action {
+    color: white !important;
+    font-size: 40px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 65px;
+    transform: rotate(0deg);
+    transition: all .5s ease;
+}
+
+.more-action:hover {
+    color: var(--septenary-color) !important;
+    transform: rotate(45deg);
+    transition: all .5s ease;
+}
+
+.maserati-page-nuestra-historia .maserati-banner-intermedio {
+    position: relative;
+}
+
+.maserati-page-nuestra-historia .maserati-banner-intermedio h4 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+}
+
+.maserati-timeline {
+    padding: 150px 0;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.maserati-tabnav .nav-pills .nav-link {
+    text-align: left;
+    background: transparent;
+    font-weight: 300;
+    color: var(--primary-color)
+}
+
+.maserati-tabnav .nav-pills .nav-link.active,
+.maserati-tabnav .nav-pills .show>.nav-link {
+    font-weight: 500;
+    background-color: transparent;
+}
+
+.maserati-tabnav .nav-pills .nav-link:hover {
+    font-weight: 500;
+}
+
+.maserati-linetime {
+    padding: 190px 0;
+}
+
+.maserati-tabnav .nav {
+    flex: 0 0 25%;
+}
+
+.maserati-tabnav .tab-content {
+    flex: 0 0 75%;
+}
+
+.maserati-tabnav .tab-content img {
+    /*max-width: 430px;*/
+    max-width: 548px;
+    margin-bottom: 35px;
+    mix-blend-mode: luminosity;
+    /*opacity: 0.2;*/
+    transition: all .5s ease;
+}
+
+.maserati-tabnav .tab-content h2 {
+    font-style: normal;
+    font-family: var(--everett-font);
+    font-size: 65px;
+    /*font-size: 50px;*/
+    font-weight: 300;
+    color: var(--tertiary-color);
+    /*opacity: 0.2;*/
+    transition: all .5s ease;
+}
+
+.maserati-tabnav .tab-content h4 {
+    /*font-size: 22px;*/
+    font-size: 28px;
+    color: var(--tertiary-color);
+    /*opacity: 0.2;*/
+    transition: all .5s ease;
+}
+
+.maserati-tabnav .tab-content .maserati-button {
+    font-size: 12px;
+    color: var(--primary-color);
+    opacity: 0.2;
+    transition: all .5s ease;
+}
+
+.maserati-tabnav .tab-content .maserati-button span {
+    text-decoration: underline;
+    font-size: 12px;
+    transition: all .5s ease;
+}
+
+.maserati-tabnav .tab-content .maserati-button i {
+    margin-left: 10px;
+}
+
+.maserati-tabnav .tab-content:hover img {
+    opacity: 1;
+    max-width: 548px;
+    transition: all .5s ease;
+}
+
+.maserati-tabnav .tab-content:hover h2 {
+    opacity: 1;
+    color: var(--primary-color);
+    font-size: 65px;
+    transition: all .5s ease;
+}
+
+.maserati-tabnav .tab-content:hover h4 {
+    opacity: 1;
+    font-size: 28px;
+    transition: all .5s ease;
+}
+
+.maserati-tabnav .tab-content:hover .maserati-button,
+.maserati-tabnav .tab-content:hover .maserati-button span {
+    opacity: 1;
+    color: var(--primary-color);
+    font-size: 20px;
+    transition: all .5s ease;
+}
+
+.maserati-tabnav .tab-content:hover .maserati-button:hover,
+.maserati-tabnav .tab-content:hover .maserati-button:hover span {
+    color: var(--septenary-color);
+    transition: all .5s ease;
+}
+
+.maserati-actualidad {
+    min-height: 1200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 180px 0;
+    color: white;
+}
+
+.maserati-actualidad .row {
+    justify-content: center;
+}
+
+.maserati-actualidad h3 {
+    font-weight: 500;
+}
+
+.maserati-actualidad p {
+    font-weight: 300;
+}
+
+/** TEMPLATE HISTORIAS **/
+.maserati-timeline_history {
+    background: #f5f5f5;
+    padding: 125px 0;
+    color: var(--primary-color);
+}
+
+.maserati-timeline_history .container:first-child {
+    margin-bottom: 125px;
+}
+
+.maserati-timeline_history .container:first-child h1,
+.maserati-timeline_history .container:first-child h4 {
+    text-align: center;
+}
+
+.maserati-timeline_history .container:first-child h4 {
+    color: var(--tertiary-color);
+}
+
+.maserati-timeline_history img {
+    mix-blend-mode: luminosity;
+}
+
+.maserati-timeline_history .row+.row {
+    margin-top: 75px;
+}
+
+.maserati-timeline_history .row {
+    align-items: center;
+}
+
+.maserati-timeline_history .row:nth-child(odd) {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: start;
+}
+
+.maserati-timeline_history .row:nth-child(even) {
+    justify-content: end;
+}
+
+.maserati-timeline_history h3 {
+    font-weight: 500;
+}
+
+.maserati-timeline_history p {
+    font-weight: 300;
+}
+
+.maserati-timeline_history h2.h1 {
+    font-size: 35px;
+}
+
+.final-timeline {
+    text-align: center;
+    margin-top: 180px;
+}
+
+.final-timeline img {
+    max-width: 820px;
+    margin: 0 auto 50px auto;
+}
+
+/** PAGE DESDE 1914 **/
+.maserati-history_since {
+    padding: 150px 0 90px 0;
+}
+
+.maserati-history_since h4 {
+    margin-bottom: 80px;
+}
+
+.maserati-history_since p {
+    font-weight: 300;
+}
+
+.maserati-history_since .maserati-button {
+    margin-top: 100px;
+}
+
+.page:not(.home) .entry-content {
+    padding: 125px 0;
+}
+
+/** AVISOS LEGALES **/
+.maserati-page-aviso-legal .entry-content section+section {
+    margin-top: 180px;
+}
+
+/** PERSONALIZACIÓN **/
+.maserati-page-personalizacion .img-zoom img {
+    transform: scale(1.5);
+    transform-origin: left 53%;
+}
+
+.maserati-page-personalizacion .maserati-fit-banner h1 {
+    top: 400px;
+    font-size: 36px;
+}
+
+.maserati-proceso {
+    padding: 150px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.maserati-proceso .container .row {
+    justify-content: flex-end;
+}
+
+.iconos-procesos {
+    display: flex;
+    gap: 35px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.iconos-procesos figure {
+    flex: 0 0 calc(100%/2);
+    max-width: calc(calc(100%/2 - 40px));
+    width: calc(100%/2);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: white;
+}
+
+.iconos-procesos figure img {
+    max-width: 60px;
+    max-height: 45px;
+    height: 45px;
+    margin: 0 auto 20px auto;
+}
+
+.iconos-procesos figure p {
+    text-align: center;
+    font-weight: 100;
+    max-width: 180px;
+}
+
+.maserati-proceso .title-border::after {
+    margin: 15px 0 20px 0;
+}
+
+.maserati-proceso h3 {
+    max-width: 65%;
+}
+
+.maserati-proceso p {
+    font-weight: 100;
+}
+
+.maserati-page-personalizacion .maserati-configurador {
+    margin-top: 0;
+}
+
+.maserati-page-personalizacion .modal figure h3 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border: none !important;
+    transform: translateY(-50%);
+    padding: 0 !important;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.maserati-page-personalizacion .modal h3 {
+    border: none !important;
+}
+
+/** FUORISERIE **/
+.maserati-fuoriserie_presentacion {
+    padding: 115px 0 90px 0;
+}
+
+.maserati-page-fuoriserie .maserati-fit-banner h1 {
+    top: 300px;
+}
+
+.maserati-fuoriserie_presentacion p {
+    font-weight: 100;
+}
+
+.maserati-fuoriserie_presentacion .tiny-container {
+    margin-bottom: 55px;
+}
+
+.maserati-fuoriserie_coleccion {
+    padding: 120px 0 90px 0;
+}
+
+.maserati-fuoriserie_coleccion .tiny-container {
+    margin-bottom: 145px;
+}
+
+.maserati-fuoriserie_coleccion article {
+    position: relative;
+}
+
+.maserati-fuoriserie_coleccion article+article {
+    margin-top: 115px;
+}
+
+.content-article_fuoriserie {
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 90px;
+    width: 100%;
+}
+
+.content-article_fuoriserie a {
+    margin-top: 60px;
+}
+
+.maserati-fuoriserie_featured {
+    position: relative;
+}
+
+/*.maserati-fuoriserie_featured:before {
+    content: '';
+    background: linear-gradient(89.6deg, rgba(51, 64, 115, 0.8) 23.25%, rgba(151, 163, 211, 0) 61.02%);
+    position: absolute;
+    z-index: 9;
+    height: 100%;
+    width: 100%;
+}*/
+
+.maserati-fuoriserie_featured .container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.maserati-fuoriserie_featured .title-border::after {
+    margin: 15px 0 15px 0;
+}
+
+.maserati-fuoriserie_featured a {
+    margin-top: 45px;
+}
+
+.maserati-fuoriserie_proyectos {
+    padding: 100px 0;
+}
+
+.maserati-fuoriserie_proyectos .container {
+    position: relative;
+}
+
+.maserati-fuoriserie_proyectos h3,
+.maserati-fuoriserie_proyectos p {
+    max-width: 50%;
+}
+
+.maserati-fuoriserie_proyectos .swiper {
+    margin-top: 35px;
+    padding: 0 15px 50px 15px;
+}
+
+.maserati-fuoriserie_proyectos .swiper-wrapper {
+    padding: 30px 0;
+}
+
+.maserati-fuoriserie_proyectos article {
+    box-shadow: 0px 0px 4.02439px 0.670732px rgba(79, 79, 79, 0.25);
+    border-radius: 3px;
+    background: white;
+    transform: scale(1);
+    transition: all .5s ease;
+}
+
+.maserati-fuoriserie_proyectos article:hover {
+    transform: scale(1.1);
+    transition: all .5s ease;
+}
+
+.maserati-fuoriserie_proyectos article img {
+    height: 230px;
+    object-fit: cover;
+    border-radius: 3px 3px 0 0;
+    margin-bottom: 25px;
+}
+
+.maserati-fuoriserie_proyectos .content-article_fuoriserie--proyecto {
+    padding: 0 25px 65px 25px;
+}
+
+.maserati-fuoriserie_proyectos .content-article_fuoriserie--proyecto h5 {
+    max-width: 60%;
+    color: var(--primary-color);
+}
+
+.maserati-fuoriserie_proyectos .swiper-button-next,
+.maserati-fuoriserie_proyectos .swiper-button-prev {
+    background: #b6b6b680;
+    top: calc(50% - 50px);
+}
+
+.maserati-fuoriserie_proyectos .swiper-button-next {
+    right: -80px;
+}
+
+.maserati-fuoriserie_proyectos .swiper-button-prev {
+    left: -80px;
+}
+
+.maserati-fuoriserie_proyectos .swiper-pagination-bullet {
+    border-color: var(--quaternary-color);
+}
+
+.maserati-fuoriserie_proyectos .swiper-pagination-bullet-active {
+    background: var(--quaternary-color);
+}
+
+/** FURIOSERIE COLECCIÓN **/
+.maserati-gallery .tiny-container {
+    margin-bottom: 110px;
+}
+
+.page-template-template-coleccion .swiper-2_5_gallery .swiper-slide a::after {
+    display: none;
+}
+
+/** PROYECTOS LIGHT **/
+.presentation-proyecto {
+    padding: 115px 0;
+}
+
+.presentation-proyecto img {
+    margin: 90px 0;
+}
+
+.presentation-proyecto h3 {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.presentation-proyecto h4 {
+    color: var(--tertiary-color);
+    margin-bottom: 45px;
+}
+
+.maserati-proyecto_multimedia video,
+.maserati-proyecto_multimedia img {
+    width: 100%;
+    margin-bottom: 115px;
+}
+
+.item-multimedia+.item-multimedia {
+    margin-top: 115px;
+}
+
+.single-proyectos_fuoriserie .maserati-fit-banner .inner-info-left h2 {
+    text-transform: initial !important;
+}
+
+.single-proyectos_fuoriserie .medium-container {
+    margin: 0 auto;
+}
+
+.presentation-proyecto.maserati-bg--dark img {
+    margin-bottom: 0;
+}
+
+.presentation-proyecto.maserati-bg--dark h4 {
+    max-width: 510px;
+}
+
+.maserati-proyecto_multimedia.maserati-proyecto-dark_multimedia {
+    padding: 115px 0;
+}
+
+.maserati-proyecto_multimedia.maserati-proyecto-dark_multimedia .item-multimedia img {
+    margin-bottom: 0;
+}
+
+.maserati-proyecto_multimedia.maserati-proyecto-dark_multimedia .item-multimedia .row {
+    align-items: center;
+}
+
+.maserati-proyecto_multimedia.maserati-proyecto-dark_multimedia .item-multimedia:nth-child(even) .row {
+    flex-direction: row-reverse;
+}
+
+.single-proyectos_fuoriserie .maserati-gallery .medium-container {
+    margin-bottom: 115px;
+}
+
+/** DEFAULT PAGE **/
+.default-page h3 {
+    font-weight: 500;
+    margin: 145px 0 40px 0;
+}
+
+.default-page p {
+    font-weight: 100;
+}
+
+.default-page ol,
+.default-page ul {
+    padding: 0;
+    margin: 30px 0 0 0;
+    font-weight: 100;
+}
+
+.default-page ol li+li {
+    margin-top: 30px;
+}
+
+.maserati-page-contacto-fuoriserie .maserati-form {
+    padding: 190px 0;
+}
+
+/** PRELOAD **/
+.loading-page {
+    overflow: hidden;
+}
+
+.preload-maserati {
+    background: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+}
+
+.preload-content img {
+    position: absolute;
+    top: 50%;
+    width: 110px;
+    z-index: 99999;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+canvas {
+    transform: scale(1);
+    opacity: 1;
+    transition: all .5s ease;
+}
+
+.no-canvas {
+    transform: scale(0);
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+@media screen and (min-width: 1920px) {
+
+    .swiper-1_5 .inner-slide img,
+    .swiper-2_5 .inner-slide img,
+    .swiper-1_5 .inner-card img {
+        max-height: 620px;
+        min-height: 620px;
+    }
+
+    .menu-desktop .menu-right .menu-modelos li a img:first-child {
+        margin-right: 0;
+        min-height: 85px;
+        object-fit: contain;
+        max-height: 85px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .menu-desktop .menu-right .menu-modelos li a {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-desktop .menu-right .menu-modelos li a img:first-child {
+        margin-right: 0;
+        min-height: 85px;
+        object-fit: contain;
+        max-height: 85px;
+        overflow: hidden;
+    }
+
+    .menu-desktop .menu-right .menu-modelos li a img:last-child {
+        margin-top: 15px;
+    }
+
+    .menu-desktop .menu-right .menu-modelos li a img:nth-child(2) {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .maserati-fit-banner.information-active .info-left {
+        max-width: 1000px;
+    }
+
+    .menu-desktop .menu-right nav {
+        padding: 100px 75px;
+    }
+
+    .maserati-fuoriserie_proyectos .swiper-button-next {
+        right: 0;
+    }
+
+    .maserati-fuoriserie_proyectos .swiper-button-prev {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .menu-desktop .menu-right nav {
+        padding: 195px 75px;
+    }
+
+    .maserati-model_caracteristicas {
+        margin-top: 0;
+    }
+
+    .maserati-model_presentation,
+    footer {
+        overflow: hidden;
+    }
+
+    /** SHOPPING TOOL **/
+    .buttons-fix {
+        right: 0;
+        top: inherit;
+        display: flex;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .buttons-fix button {
+        border-radius: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 25px;
+        height: 50px;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: white;
+        border: none;
+        background: var(--tertiary-color);
+    }
+
+    .buttons-fix button[aria-expanded="true"] {
+        background: var(--septenary-color);
+        color: var(--primary-color);
+    }
+
+    .buttons-fix .dropdown-menu {
+        inset: auto auto 0px 0px;
+        transform: translate3d(0px, -52px, 0px);
+        width: 100%;
+        margin: 0;
+        border: none;
+        bottom: 0;
+        padding: 10px 14px 10px 20px;
+        border-radius: 5px 5px 0 0;
+        margin-bottom: -2px !important;
+        background: var(--quinary-color);
+        color: var(--primary-color);
+    }
+
+    .buttons-fix a {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        justify-content: space-between;
+        padding: 15px 0;
+    }
+
+    .buttons-fix .group-item {
+        display: flex;
+    }
+
+    .buttons-fix a i {
+        font-size: 20px;
+    }
+
+    .buttons-fix li+li {
+        border-top: 1px solid var(--quaternary-color);
+        margin-top: 0;
+    }
+
+    .buttons-fix .tooltip-hover {
+        position: relative;
+        left: inherit;
+        filter: drop-shadow(4px 20px 8px rgba(0, 0, 0, 0.01)) drop-shadow(2px 11px 7px rgba(0, 0, 0, 0.05)) drop-shadow(1px 5px 5px rgba(0, 0, 0, 0.09)) drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.1)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
+        padding: inherit;
+        background: transparent;
+        color: var(--primary-color);
+        border-radius: 0;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 14px;
+        text-transform: uppercase;
+        transform: scaleX(1);
+        transform-origin: inherit;
+        padding: 0;
+        margin-left: 10px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .dropup .dropdown-toggle::after {
+        display: inline-block;
+        margin-left: 0.255em;
+        vertical-align: 0.255em;
+        content: "\e902";
+        border-top: 0;
+        border-right: none;
+        border-bottom: none;
+        border-left: none;
+        font-family: 'maserati-font';
+        transform: rotate(-90deg);
+    }
+
+    .buttons-fix button[aria-expanded="true"]:after {
+        content: "\e905";
+        font-family: 'maserati-font' !important;
+    }
+
+    .buttons-fix a:hover {
+        background: transparent;
+        color: var(--primary-color);
+        transition: all .5s ease;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    h3,
+    .h3 {
+        font-size: 20px;
+    }
+
+    h6,
+    .h6,
+    h4,
+    .h4 {
+        font-size: 20px;
+        line-height: normal;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .paddingY-95 {
+        padding: 70px 0;
+    }
+
+    .swiper-pagination-bullet {
+        border: 1px solid var(--quaternary-color);
+    }
+
+    .swiper-pagination-bullet-active {
+        background: var(--quaternary-color);
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+        background: rgba(182, 182, 182, 0.5);
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 12px;
+    }
+
+    .maserati-content_main__banner .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .maserati-content_main__banner .info-left {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .maserati-content_main__banner .info-left::after {
+        display: none;
+    }
+
+    .maserati-content_main__banner h2,
+    .maserati-content_main__banner h6 {
+        text-align: center;
+        line-height: normal;
+    }
+
+    .maserati-content_main__banner .maserati-button {
+        margin: 15px auto 0 auto;
+    }
+
+    .maserati-paginations {
+        bottom: 40px;
+    }
+
+    .maserati-distribuidor .maserati-box-information {
+        width: 90%;
+        left: 50%;
+        position: fixed;
+        z-index: 9;
+        top: 50%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        z-index: 9001;
+        background-color: white;
+        padding: 40px 15px;
+        -webkit-overflow-scrolling: touch;
+        transform: translate(-200%, -50%);
+        transition: transform .3s;
+    }
+
+    .open-info-map .maserati-distribuidor .maserati-box-information {
+        transform: translate(-50%, -50%);
+        transition: transform .3s;
+    }
+
+    .maserati-box-information .icon-close {
+        position: absolute;
+        right: 30px;
+        top: 15px;
+    }
+
+    .maserati-distribuidor .maserati-box-information .header-model {
+        color: white;
+    }
+
+    .header-model h3 {
+        font-weight: 500;
+        color: white;
+    }
+
+    .header-model p {
+        font-weight: 100;
+        color: white;
+        font-size: 16px;
+    }
+
+    .maserati-explore {
+        background-color: white;
+        padding: 95px 0 32px 0;
+        background-size: 100% 60%;
+    }
+
+    .maserati-explore h3 {
+        font-size: 22px;
+    }
+
+    .maserati-distribuidor .container:first-child {
+        text-align: left;
+    }
+
+    .maserati-distribuidor .container:first-child h3 {
+        font-size: 22px;
+        font-weight: 500;
+        max-width: 230px;
+        line-height: normal;
+    }
+
+    .swiper-single_banner__models .swiper-button-prev,
+    .swiper-single_banner__models .swiper-button-next {
+        display: none;
+    }
+
+    .swiper-single_banner__models .swiper-wrapper,
+    .swiper-single_banner__models_single .swiper-wrapper {
+        margin-top: 0;
+    }
+
+    .swiper-single_banner__models,
+    .swiper-single_banner__models_single {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .swiper-single_banner__models .swiper-slide,
+    .swiper-single_banner__models_single .swiper-slide {
+        min-height: auto;
+    }
+
+    header .inner-center img {
+        max-width: 98px;
+    }
+
+    header .inner-center .maserati-white {
+        display: none;
+    }
+
+    header .inner-left {
+        order: 1;
+    }
+
+    .mini_banner-active img {
+        max-height: 300px;
+        min-height: 300px;
+        object-fit: cover;
+    }
+
+    .header-sticky {
+        width: 100%;
+    }
+
+    .header-model img {
+        min-height: 170px;
+        max-height: 170px;
+        object-fit: contain;
+    }
+
+    .swiper-single_banner__models .swiper-pagination {
+        bottom: 115px;
+    }
+
+    .swiper-single_banner__models_single .swiper-pagination {
+        bottom: 0;
+    }
+
+    .maserati-pre_owned {
+        min-height: auto;
+    }
+
+    .maserati-pre_owned .col-md-4 {
+        padding: 70px 55px 30px 55px;
+        min-height: 445px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .swiper-2_5 .inner-slide img {
+        max-height: 240px;
+        min-height: 240px;
+    }
+
+    .swiper-2_5 .swiper-wrapper,
+    .swiper-1_5 .swiper-wrapper {
+        padding: 30px 0 50px 0;
+    }
+
+    .tiny-container {
+        padding: 0 15px;
+    }
+
+    .maserati-distribuidor .col-md-8 {
+        padding: 0;
+    }
+
+    .information-sucursal {
+        padding: 0 15px 20px 15px;
+
+    }
+
+    .title-line {
+        text-transform: initial;
+        font-size: 20px;
+    }
+
+    .title-line::after {
+        width: 60px;
+        margin: 0 0 15px 0;
+    }
+
+    .mini_banner-active .swiper-slide {
+        height: 100%;
+    }
+
+    /**SINGLE  MODELO **/
+    .maserati-model_slider .maserati-content_main__banner {
+        height: 100%;
+        padding: 80px 0 70px 0;
+        top: 0;
+    }
+
+    .maserati-model_slider .maserati-disclamers {
+        top: -5px;
+        width: 10px !important;
+        height: 10px !important;
+        font-size: 9px;
+    }
+
+    .maserati-model_slider .maserati-content_main__banner .container {
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .maserati-model_slider .maserati-content_main__banner .info-left img {
+        max-width: 120px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .maserati-model_slider .maserati-content_main__banner .right h5 {
+        font-size: 16px;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    .maserati-model_slider .maserati-content_main__banner .right h2 {
+        font-size: 18px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .maserati-model_caracteristicas .inner-card {
+        flex-direction: column;
+    }
+
+    .maserati-model_caracteristicas .content-card {
+        padding: 20px;
+    }
+
+    .maserati-model_caracteristicas .content-card h3 {
+        font-size: 20px;
+    }
+
+    .maserati-model_caracteristicas .content-card p {
+        font-size: 14px;
+    }
+
+    .maserati-model_caracteristicas .image-card {
+        flex: 0 0 auto;
+        margin-right: 0;
+        min-width: 100%;
+    }
+
+    .maserati-model_caracteristicas .content-card p {
+        min-height: 125px;
+    }
+
+    .maserati-configurador {
+        min-height: 350px;
+        margin-top: 45px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .maserati-configurador a {
+        margin: 0 auto;
+    }
+
+    .swiper-1_5 .inner-slide img,
+    .swiper-1_5 .inner-card img {
+        min-height: 100%;
+        max-height: 180px;
+    }
+
+    .maserati-model_presentation {
+        padding: 55px 15px 0 15px;
+        background-size: 100% 80%;
+    }
+
+    .maserati-model_presentation .title-line {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .maserati-model_presentation .title-line span {
+        font-size: 22px;
+        margin-top: 0px;
+        font-weight: normal;
+    }
+
+    .maserati-model_presentation .inner_presentation video {
+        width: 100%;
+    }
+
+    .maserati-model_galeria .tiny-container h3 {
+        font-size: 22px;
+    }
+
+    .maserati-model_galeria .tiny-container h3 span {
+        font-size: 20px;
+        line-height: normal;
+    }
+
+    #modelGallery .modal-body .swiper-slide img {
+        height: 50%;
+    }
+
+    #modelGallery .modal-body>.container:first-child {
+        text-align: center;
+    }
+
+    #modelGallery .modal-body .swiper-slide h5 {
+        max-width: calc(100% - 30px);
+    }
+
+    #modelGallery .swiper-button-next,
+    #modelGallery .swiper-rtl .swiper-button-prev {
+        right: 15px;
+    }
+
+    #modelGallery .swiper-button-prev,
+    #modelGallery .swiper-rtl .swiper-button-next {
+        left: 15px;
+    }
+
+    #modelGallery .modal-body .swiper-pagination,
+    #modelGallery .modal-body .swiper-pagination span {
+        bottom: 30px;
+    }
+
+    #modelGallery .btn-close {
+        right: 25px;
+        top: 30px;
+    }
+
+    .card-model h2 span.until {
+        font-size: 16px;
+    }
+
+    .card-model h6 {
+        font-style: normal;
+        color: var(--quaternary-color);
+    }
+
+    .swiper-2_5 .inner-slide img,
+    .swiper-2_5_gallery .inner-slide img,
+    .swiper-2_5_gallery_singles .inner-slide img {
+        max-height: 200px;
+        min-height: 200px;
+
+    }
+
+    .maserati-model_colection>.container:first-child {
+        text-align: left !important;
+    }
+
+    .maserati-model_galeria .swiper-2_5 .swiper-wrapper {
+        padding-top: 0;
+    }
+
+    .maserati-model_galeria .fullwidth {
+        margin-top: 15px !important;
+    }
+
+    .maserati-model_caracteristicas {
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+
+    .maserati-model_motor {
+        padding: 45px 15px;
+    }
+
+    .maserati-model_motor .inner-container {
+        min-height: 395px;
+    }
+
+    .maserati-model_motor .tile-group {
+        max-width: 160px;
+    }
+
+    .maserati-model_motor .tile-group p {
+        font-size: 14px;
+    }
+
+    .listen-motor {
+        width: 200px;
+        height: 200px;
+        left: 0;
+        bottom: -80px;
+        transform: translateX(0);
+    }
+
+    .listen-motor i {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+    }
+
+    .pulse-sound {
+        height: 60px;
+        width: 60px;
+        bottom: 70px;
+        left: 70px;
+        top: inherit;
+    }
+
+    .maserati-model_colection .version-info {
+        gap: 0;
+        flex-wrap: wrap;
+    }
+
+    .maserati-model_colection .version-info .version-info_item {
+        flex: 0 0 33.3333%;
+        padding: 15px;
+    }
+
+    .maserati-model_colection .version-info .version-info_item:nth-child(3n+4)::before {
+        display: none;
+    }
+
+    .maserati-model_colection .version-info .version-info_item+.version-info_item::before {
+        height: 90px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .maserati-model_colection .version_to_action .inner-container {
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .maserati-model_colection .version-info_item h5 {
+        font-size: 20px;
+    }
+
+    .maserati-model_colection .version-info .version-info_item p {
+        font-size: 14px;
+    }
+
+    .maserati-model_colection .header-model {
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .maserati-model_colection .header-model h5 {
+        color: var(--tertiary-color);
+    }
+
+    .maserati-model_colection .header-model img {
+        min-height: auto;
+        max-height: 170px;
+        width: 600px;
+    }
+
+    .maserati-model_colection .swiper-single_banner__models_single h2 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .maserati-model_colection .container:nth-child(2) {
+        padding: 0;
+    }
+
+    .maserati-model_colection .swiper-name-pagination {
+        display: block;
+        margin: 0 15px 32px 15px;
+        font-size: 11.5px;
+        color: var(--tertiary-color);
+        border-bottom: 1px solid var(--quaternary-color);
+    }
+
+    .maserati-model_colection .swiper-name-pagination .swiper-slide+.swiper-slide {
+        margin-left: 15px;
+    }
+
+    .maserati-model_colection .swiper-name-pagination .swiper-slide::after {
+        content: '';
+        background: transparent;
+        height: 3px;
+        width: 100%;
+        display: block;
+        margin-top: 5px;
+        text-align: center;
+        transition: all .5s ease;
+    }
+
+    .maserati-model_colection .swiper-name-pagination .swiper-slide-thumb-active::after {
+        background: var(--primary-color);
+        transition: all .5s ease;
+    }
+
+    .items-personalizables {
+        padding: 60px 0;
+    }
+
+    .items-personalizables>.container:first-child {
+        padding: 0;
+    }
+
+    .items-personalizables .row div[class*="col-md-"]:last-child h3 {
+        font-size: 22px;
+        line-height: normal;
+    }
+
+    .items-personalizables .row div[class*="col-md-"]:last-child *+* {
+        margin-top: 10px;
+
+    }
+
+    .items-personalizables .row div[class*="col-md-"]:last-child p {
+        font-size: 14px;
+        line-height: normal;
+        color: var(--secondary-color);
+        margin: 15px auto 25px auto;
+    }
+
+    .items-personalizables .row div[class*="col-md-"]:last-child a {
+        margin: 0 auto;
+    }
+
+    .items-personalizables img {
+        min-height: 245px;
+        max-height: 245px;
+    }
+
+    .items-personalizables .row div[class*="col-md-"]:last-child {
+        padding: 35px 15px 0 15px;
+    }
+
+
+
+    .swiper-horizontal>.swiper-scrollbar {
+        display: none;
+    }
+
+    div[id*="modelFeatures"] .swiper-modal .swiper-wrapper {
+        padding-bottom: 25px;
+    }
+
+    div[id*="modelFeatures"] .btn-close {
+        background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1.2em auto no-repeat;
+        right: 30px;
+        top: 35px;
+    }
+
+    div[id*="modelFeatures"] .inner-card {
+        flex-direction: column;
+        padding-top: 75px;
+    }
+
+    div[id*="modelFeatures"] .image-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    div[id*="modelFeatures"] .image-card img {
+        max-height: 295px;
+        min-width: 100%;
+        width: 100%;
+    }
+
+    div[id*="modelFeatures"] .image-card h3 {
+        font-weight: 500;
+        margin-bottom: 25px;
+    }
+
+    div[id*="modelFeatures"] .content-card h3 span {
+        font-size: 18px;
+        font-family: var(--everett-font);
+        font-style: normal;
+    }
+
+    div[id*="modelFeatures"] .content-card p {
+        font-size: 14px;
+        font-weight: 100;
+    }
+
+    div[id*="modelFeatures"] #fraction {
+        bottom: -25px;
+        flex: 0 0 100%;
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 100;
+    }
+
+    .single-modelo #disclamersModal p {
+        margin-bottom: 0 !important;
+        font-size: 14px !important;
+    }
+
+    .single-modelo #disclamersModal p+p {
+        margin-top: 25px !important;
+        font-weight: 500 !important;
+    }
+
+    .single-modelo #disclamersModal .modal-body .btn-close {
+        margin-bottom: 25px !important;
+    }
+
+    .single-modelo #disclamersModal .modal-body {
+        padding: 35px 25px;
+    }
+
+    /** ARCHIVE MODELOS **/
+    .maserati-grid-modelos .container:first-child {
+        margin-bottom: 15px !important;
+    }
+
+    .maserati-grid-modelos .container:first-child h3 {
+        max-width: 230px;
+        margin: 0 auto;
+        line-height: normal;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+
+    .card-model {
+        border-color: transparent;
+        text-align: center;
+    }
+
+    .card-model img {
+        min-height: 145px;
+        max-height: 145px;
+    }
+
+    .card-model h5 {
+        font-size: 20px;
+    }
+
+    .card-model h6 {
+        font-size: 16px;
+        color: var(--primary-color);
+        font-family: var(--everett-font);
+        font-weight: 300;
+    }
+
+    .card-model h2 {
+        font-size: 16px;
+        color: var(--primary-color);
+        font-family: var(--everett-font);
+    }
+
+    .maserati-banner-shop img {
+        max-height: 310px;
+        min-height: 310px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .maserati-banner-shop .container {
+        top: 50px;
+        transform: translateY(0%);
+        text-align: center;
+    }
+
+    .maserati-banner-shop .inner-container {
+        max-width: 100%;
+    }
+
+    .maserati-banner-shop h3 {
+        font-size: 22px;
+    }
+
+    .maserati-banner-shop h4 {
+        font-size: 20px;
+    }
+
+    .maserati-banner-shop .title-line::after {
+        display: none;
+    }
+
+    .maserati-archive-product {
+        padding: 35px 0;
+    }
+
+    ul.products li.product {
+        width: 100%;
+    }
+
+    .maserati-archive-product .container>h3:first-child {
+        margin-bottom: 35px;
+    }
+
+    .sidebar-filter {
+        max-width: 505px;
+        width: 100%;
+        left: 0;
+        position: fixed;
+        z-index: 9;
+        padding: 40px 15px 40px 15px;
+        top: 0;
+        bottom: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        z-index: 9999;
+        background-color: white;
+        -webkit-overflow-scrolling: touch;
+        transform: translateX(-100%);
+        transition: transform .3s;
+    }
+
+    .open-filter .sidebar-filter {
+        transform: translateX(0);
+        transition: transform .3s;
+    }
+
+    .sidebar-filter>.icon-close {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 32px;
+    }
+
+    .maserati-filter-toggle {
+        font-size: 16px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+    }
+
+    .maserati-filter-toggle i {
+        margin-left: 15px;
+    }
+
+    #product-list .woocommerce-product-search+.row {
+        margin-bottom: 32px;
+    }
+
+    #product-list .woocommerce-product-search+.row .col-6:last-child a {
+        font-size: 14px;
+        color: var(--tertiary-color);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    #product-list .woocommerce-product-search+.row .col-6:last-child a i {
+        margin-left: 7px;
+    }
+
+    .woocommerce-tabs ul.tabs li a {
+        padding: 15px 25px !important;
+        font-size: 14px;
+    }
+
+    .woocommerce-Tabs-panel table {
+        font-size: 10px;
+    }
+
+    .woocommerce-Tabs-panel table tr td {
+        padding: 15px 25px;
+    }
+
+    .woocommerce-Tabs-panel table tr td {
+        padding: 15px 0 15px 15px;
+    }
+
+    .related.products {
+        padding: 70px 0;
+    }
+
+    .related h3.title-related {
+        margin-bottom: 32px;
+        text-align: left !important;
+    }
+
+    .pre-owned-gallery_thumbs {
+        display: none;
+    }
+
+    .return {
+        position: absolute;
+        top: 25px;
+        z-index: 999;
+        color: var(--quinary-color) !important;
+        left: 15px;
+        font-size: 12px;
+    }
+
+    .full-container {
+        padding: 0;
+    }
+
+    .product .summary.entry-summary {
+        padding: 0 15px;
+    }
+
+    h1.product_title {
+        text-align: left;
+        font-weight: normal;
+        font-size: 22px;
+        margin-top: 35px;
+        padding: 0 15px;
+        line-height: normal;
+    }
+
+    .product_subtitle {
+        margin-bottom: 32px;
+        font-weight: 300;
+        font-size: 16px;
+        text-align: left !important;
+        padding: 0 15px;
+    }
+
+    .product h5.price {
+        margin-bottom: 30px;
+        float: left;
+        padding: 0 15px;
+        font-weight: 300;
+    }
+
+    .swiper-pagination-gallery {
+        bottom: -15px !important;
+        position: relative;
+    }
+
+    .maserati-footer__logo {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .sidebar-filter aside {
+        border: none;
+    }
+
+    .sidebar-filter aside .widget-title {
+        border-bottom: none;
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+        font-weight: 100;
+    }
+
+    .sidebar-filter aside section ul,
+    .sidebar-filter aside section form {
+        padding: 0 15px 30px 15px;
+    }
+
+    .sidebar-filter i {
+        transform: rotate(0deg);
+        transition: all .5s ease;
+    }
+
+    .sidebar-filter .show-filter i {
+        transform: rotate(180deg);
+        transition: all .5s ease;
+    }
+
+    .maserati-filter-toggle span span {
+        margin-left: 5px;
+    }
+
+    footer {
+        padding: 45px 0 45px 0;
+        overflow: hidden;
+    }
+
+    footer .col-md-3::before {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background: var(--secondary-color);
+        display: block;
+        margin: 30px 0;
+    }
+
+    footer ul {
+        margin: 0;
+    }
+
+    footer .col-md-3:last-child .inner-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .col-md-3:last-child .inner-column .maserati-social {
+        order: 2;
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .col-md-3:last-child .inner-column div[class*="maserati-"]:first-child:before {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background: var(--secondary-color);
+        display: block;
+        margin: 30px 0;
+    }
+
+    .maserati-contact {
+        margin-top: 0;
+    }
+
+    .maserati-contact p:last-child {
+        margin-bottom: 0;
+    }
+
+    .maserati-page-noticias-maserati .swiper-button-next,
+    .maserati-page-noticias-maserati .swiper-button-prev,
+    .maserati-page-noticias-maserati .swiper-button-prev-news,
+    .maserati-page-noticias-maserati .swiper-button-next-news {
+        display: none;
+    }
+
+    .maserati-page-mundo-maserati .maserati-block-featured {
+        padding: 45px 0;
+    }
+
+    .card-post-item h5::after {
+        margin: 15px 0;
+    }
+
+    .post-grid .card-post-item {
+        min-height: auto;
+    }
+
+    .post-grid .swiper-pagination {
+        margin-top: 0px;
+    }
+
+    .background-block h3 {
+        margin-bottom: 15px;
+        font-size: 22px;
+
+    }
+
+    .background-block p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .maserati-all-news h3+h4 {
+        max-width: 100%;
+        font-size: 20px;
+        line-height: normal;
+        text-align: left !important;
+    }
+
+    .maserati-all-news .swiper-button-next,
+    .maserati-all-news .swiper-button-prev {
+        display: none;
+    }
+
+    .maserati-all-news .swiper-all-news {
+        padding: 0 2px;
+    }
+
+    .maserati-all-news {
+        padding-top: 70px;
+    }
+
+    .maserati-category-lanzamientos {
+        padding: 45px 0;
+    }
+
+    .maserati-category-lanzamientos .card-post-item a {
+        position: relative;
+    }
+
+    .maserati-category-lanzamientos.post-grid .card-post-item:not(.maserati-article-post-short) {
+        min-height: auto;
+    }
+
+    .maserati-all-news-button {
+        padding-bottom: 0;
+    }
+
+    .maserati-all-news>.container:first-child {
+        text-align: left !important;
+        margin-bottom: 0px;
+    }
+
+    .items-personalizables .row:nth-child(even) div[class*="col-md-"]:last-child {
+        padding: 35px 15px 0 15px;
+    }
+
+    .maserati-newsletter {
+        align-items: flex-start;
+        padding: 55px 0;
+    }
+
+    .maserati-newsletter h3 {
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 15px;
+    }
+
+    .maserati-newsletter p {
+        font-weight: 100;
+    }
+
+    .maserati-newsletter form label {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .maserati-newsletter form input[type="submit"] {
+        margin-top: 50px;
+        margin: 25px auto 0 auto;
+    }
+
+    .post-template-default.single-post .return {
+        position: relative;
+        color: var(--primary-color) !important;
+    }
+
+    .single h1 {
+        font-size: 20px;
+        line-height: normal;
+        text-align: left !important;
+        font-weight: 500;
+        color: var(--primary-color)
+    }
+
+    .single .post_title {
+        margin-top: 55px;
+        padding: 0 15px;
+    }
+
+    .single article .container:first-child {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .single article .container:first-child .post_title+p {
+        font-size: 16px;
+        color: var(--tertiary-color)
+    }
+
+    .single .entry-content .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .single .medium-container {
+        padding: 0 15px;
+    }
+
+    .single .gallery-content .row {
+        margin: 0;
+    }
+
+    .single .gallery-content .col {
+        width: 50%;
+        flex: 0 0 50%;
+    }
+
+    .single .gallery-content .col:first-child {
+        padding-left: 0;
+        padding-right: 7.5px;
+    }
+
+    .single .gallery-content .col:nth-child(2) {
+        padding-right: 0;
+        padding-left: 7.5px;
+    }
+
+    .single .gallery-content .col-md-12 {
+        padding-right: 0;
+        padding-left: 0;
+        margin-top: 15px;
+    }
+
+    .single .medium-container {
+        margin: 32px auto;
+    }
+
+    .single .post_title::after {
+        width: 100% !important;
+    }
+
+    .single .post_title+p {
+        padding: 0 15px;
+    }
+
+    .single .post_title::after {
+        margin: 35px auto 30px auto;
+    }
+
+    .maserati-configurador .row {
+        margin: 0;
+    }
+
+    .post-grid .swiper-one-news .card-post-item img {
+        max-height: 325px;
+    }
+
+    .post-grid .swiper-one-news .card-post-item {
+        justify-content: flex-start;
+        min-height: 325px;
+        max-height: 325px;
+        overflow: hidden;
+    }
+
+    .post-grid .swiper-one-news .card-post-item .content-post>h5 {
+        font-size: 18px !important;
+        line-height: normal;
+    }
+
+    .post-grid .swiper-one-news .card-post-item .content-post {
+        position: absolute;
+        max-width: 65%;
+        left: 15px;
+        bottom: inherit;
+        top: 15px;
+    }
+
+    .content-post h5 {
+        font-size: 16px;
+        line-height: normal;
+        font-weight: 500;
+    }
+
+    .content-post p,
+    .content-post a {
+        font-size: 14px;
+    }
+
+    .maserati-all-news.post-grid .maserati-article-post-short {
+        min-height: 430px;
+    }
+
+    .post-grid .card-post-item:not(.maserati-article-post-short) {
+        min-height: 430px;
+    }
+
+    .swiper-one-news .swiper-pagination {
+        bottom: 15px !important;
+    }
+
+    section[class*="maserati-category-"] .container:first-child {
+        margin-bottom: 25px;
+        max-width: 100%;
+        margin: 0 auto 25px 0;
+    }
+
+    section[class*="maserati-category-"] .container:first-child h3 {
+        line-height: normal;
+    }
+
+    .maserati-category-lanzamientos .container:first-child {
+        max-width: 50%;
+    }
+
+    .maserati-category-lanzamientos .container:nth-child(2) {
+        padding: 0;
+    }
+
+    .maserati-fuoriserie .container:first-child {
+        text-align: left !important;
+    }
+
+    .maserati-fuoriserie .container:last-child {
+        padding: 0;
+    }
+
+    .maserati-fuoriserie .foot-fuoriserie {
+        padding: 0 15px;
+    }
+
+    .maserati-fuoriserie .foot-fuoriserie p {
+        font-weight: 100;
+        line-height: normal;
+    }
+
+    /** GARANTÍA **/
+    .maserati-page-garantia .maserati-content_main__banner {
+        bottom: inherit;
+        top: 75px;
+    }
+
+    .maserati-page-garantia #modelGallery .modal-body .swiper-slide img {
+        max-height: 444px;
+    }
+
+    .maserati-content_main__banner h2 {
+        font-size: 22px;
+        font-weight: 500;
+        text-transform: initial;
+        margin-bottom: 15px;
+    }
+
+    .maserati-content_main__banner h6 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .maserati-motors-waranty .tiny-container h3 {
+        text-align: left !important;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+
+    .maserati-motors-waranty .tiny-container p {
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .maserati-motors-waranty .version-info .version-info_item {
+        flex: 0 0 50%;
+        padding: 15px;
+        flex-direction: column-reverse;
+    }
+
+    .maserati-motors-waranty .version-info .version-info_item:not(:nth-last-child(2n)) {
+        margin-bottom: 10px;
+    }
+
+    .maserati-motors-waranty .version-info .version-info_item p {
+        margin-bottom: 10px;
+    }
+
+    .maserati-motors-waranty .version-info {
+        gap: 0;
+        flex-wrap: wrap;
+    }
+
+    .maserati-motors-waranty .version-info .version-info_item+.version-info_item::before {
+        height: 90px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .maserati-motors-waranty .version-info .version-info_item:nth-child(3)::before {
+        display: none;
+    }
+
+    .maserati-garantia_motor {
+        padding: 65px 0;
+    }
+
+    .maserati-garantia_motor .listen-motor {
+        bottom: 100px;
+        left: -55px;
+    }
+
+    .maserati-garantia_motor .title-line {
+        max-width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .maserati-garantia_motor .title-group p {
+        font-size: 14px;
+        max-width: 160px;
+        margin-bottom: 65px;
+        font-weight: 100;
+    }
+
+    .maserati-page-garantia .marginB-95 {
+        margin-bottom: 45px;
+    }
+
+    .maserati-details-motors .tiny-container h4,
+    .maserati-gallery-waranty .tiny-container h4 {
+        margin-bottom: 32px;
+    }
+
+    .maserati-details-motors .tiny-container p,
+    .maserati-lab-waranty .tiny-container p,
+    .maserati-gallery-waranty .tiny-container p {
+        margin-bottom: 32px;
+        line-height: normal;
+        font-size: 14px;
+    }
+
+    .swiper-waranty-motors .swiper-wrapper+.swiper-pagination {
+        margin-bottom: 0;
+    }
+
+    .maserati-page-garantia .swiper-2_5_gallery .inner-slide img {
+        max-height: 275px;
+        min-height: 275px;
+    }
+
+    .maserati-page-garantia .swiper-2_5_gallery .swiper-wrapper {
+        padding: 0;
+    }
+
+    .maserati-gallery-waranty .swiper-button-next,
+    .maserati-gallery-waranty .swiper-button-prev {
+        display: none;
+    }
+
+    .maserati-gallery-waranty .swiper-pagination {
+        position: relative;
+        bottom: -8px;
+    }
+
+    .maserati-gallery .fullwidth>.row {
+        margin: 0;
+    }
+
+    .maserati-gallery .fullwidth>.row div[class*="col"]:first-child {
+        padding-left: 0
+    }
+
+    .maserati-gallery .fullwidth>.row div[class*="col"]:nth-child(2) {
+        padding-right: 0
+    }
+
+    .maserati-gallery .fullwidth>.row div[class*="col"]:last-child {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .maserati-details-motors .container .col-md-6 {
+        max-width: 50%;
+        padding: 0;
+    }
+
+    .maserati-details-motors .container .col-md-6:first-child {
+        padding-right: 2px;
+    }
+
+    .maserati-details-motors .container .col-md-6:last-child {
+        padding-left: 2px;
+    }
+
+    .maserati-lab-waranty .tiny-container h3 {
+        text-align: left !important;
+    }
+
+    .maserati-lab-waranty video {
+        min-height: 210px;
+        max-height: 210px;
+        object-fit: cover;
+    }
+
+    .maserati-extended-waranty {
+        min-height: 470px;
+        align-items: flex-start;
+        padding: 55px 0;
+    }
+
+    .maserati-extended-waranty .col-md-4 {
+        max-width: 225px;
+        margin: 0 auto;
+    }
+
+    .maserati-extended-waranty p {
+        font-size: 14px;
+        line-height: normal;
+        margin-bottom: 40px;
+    }
+
+    .maserati-extended-waranty h3 {
+        font-size: 22px;
+    }
+
+    .maserati-garantia_motor .pulse-on_off {
+        max-height: 70px;
+    }
+
+    /** GARANTIA EXTENDIDA **/
+    .maserati-presentation-waranty {
+        padding: 55px 0;
+    }
+
+    .maserati-presentation-waranty p {
+        font-size: 14px;
+    }
+
+    .maserati-presentation-waranty .tiny-container h3 {
+        text-align: left !important;
+        font-size: 20px;
+    }
+
+    /*.maserati-presentation-waranty .tiny-container p {
+        font-size: 14px;
+    }*/
+
+    .maserati-presentation-waranty .maserati-button {
+        margin-top: 40px;
+    }
+
+    .maserati-trayecto-waranty {
+        padding: 0 0 55px 0;
+        background: white;
+    }
+
+    .maserati-trayecto-waranty .row div[class*="col-md"]:last-child,
+    .maserati-tranquilidad-waranty .row div[class*="col-md"]:last-child,
+    .maserati-waranty-model .row div[class*="col-md"]:last-child {
+        padding-left: 15px;
+    }
+
+    .maserati-trayecto-waranty .row>div[class*="col-md"]+div[class*="col-md"] {
+        margin-top: 25px;
+    }
+
+    .maserati-trayecto-waranty .row div[class*="col-md"]:first-child {
+        padding-right: calc(var(--bs-gutter-x) * .5);
+    }
+
+    .maserati-waranty-featured_image img,
+    .maserati-waranty-model img {
+        min-height: 200px;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .maserati-waranty-model .fullwidth .container .row {
+        margin: 0;
+    }
+
+    .maserati-programa-waranty {
+        padding: 55px 0;
+    }
+
+    .maserati-programa-waranty h3,
+    .maserati-trayecto-waranty h3 {
+        line-height: normal;
+    }
+
+    .items-waranty-year figure h5 {
+        font-size: 15px;
+        font-weight: 700 !important;
+        color: var(--primary-color);
+    }
+
+    .items-waranty-year figure p {
+        font-size: 14px;
+    }
+
+    .items-waranty-year figure img {
+        margin-bottom: 10px;
+    }
+
+    .items-waranty-year {
+        gap: 0px;
+        margin-bottom: 25px;
+    }
+
+    .maserati-tranquilidad-waranty {
+        padding: 0 0 55px 0;
+    }
+
+    .maserati-waranty-model .fullwidth .container {
+        padding: 55px 0 0;
+    }
+
+
+    .maserati-waranty-model .fullwidth .row div[class*="col-md"]:last-child {
+        padding-left: calc(var(--bs-gutter-x) * 1) !important;
+        padding-right: calc(var(--bs-gutter-x) * 1) !important;
+    }
+
+    .maserati-waranty-model .fullwidth .row div[class*="col-md"]:first-child {
+        margin-bottom: 25px;
+    }
+
+    .maserati-tranquilidad-waranty .container:first-child .row div[class*="col-md"]:first-child {
+        margin-bottom: 25px;
+    }
+
+    .maserati-waranty-model .fullwidth:nth-child(odd) .row div[class*="col-md"]:last-child {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .maserati-waranty-model .fullwidth:nth-child(2) .row div[class*="col-md"]:first-child {
+        display: none;
+    }
+
+    .items-personalizables {
+        background: white;
+    }
+
+    /** REPUESTOS **/
+    .maserati-page-repuestos .main-slider .inner-image img,
+    .maserati-page-repuestos .main-slider .swiper-slide,
+    .maserati-page-mantenimiento .inner-image img,
+    .maserati-page-mantenimiento .main-slider .swiper-slide,
+    .maserati-page-garantia-extendida .inner-image img,
+    .maserati-page-garantia-extendida .main-slider .swiper-slide {
+        max-height: 300px;
+    }
+
+    .maserati-fit-banner {
+        position: relative;
+    }
+
+    .maserati-fit-banner img {
+        max-height: 300px;
+        min-height: 300px;
+        object-fit: cover;
+    }
+
+    .maserati-fit-banner.information-active img {
+        max-height: 455px;
+        min-height: 455px;
+    }
+
+    .maserati-fit-banner h1 {
+        max-width: 100%;
+        top: 80px;
+        font-weight: 500 !important;
+    }
+
+    .maserati-fit-banner.information-active h1 {
+        top: 80px;
+        font-size: 22px;
+        font-weight: 500 !important;
+    }
+
+    .maserati-fit-banner.information-active .info-left {
+        left: 15px;
+        bottom: 40px;
+    }
+
+    .maserati-fit-banner.information-active .info-left h2 {
+        font-size: 22px;
+        font-weight: 500 !important;
+        margin-bottom: 0;
+        line-height: normal;
+    }
+
+    .maserati-fit-banner.information-active .info-left h6 {
+        font-size: 16px;
+        font-style: normal;
+        font-family: var(--everett-font);
+        font-weight: 100;
+    }
+
+    .maserati-page-repuestos .maserati-content_main__banner,
+    .maserati-page-mantenimiento .maserati-content_main__banner,
+    .maserati-page-garantia-extendida .maserati-content_main__banner {
+        bottom: inherit;
+        top: 80px;
+    }
+
+    .maserati-presentation-programa {
+        padding: 65px 0;
+    }
+
+    .middle-banner-block {
+        height: 200px;
+        min-height: 200px;
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 55px;
+    }
+
+    .background-block {
+        padding: 0;
+        background: white !important;
+    }
+
+    .background-block+.background-block {
+        margin-top: 60px;
+    }
+
+    .background-block:last-child {
+        margin-bottom: 60px;
+    }
+
+    .background-block .row div[class*="col-md"] {
+        padding: 0 15px;
+    }
+
+    .background-block .row div[class*="col-md"]:first-child {
+        padding: 0 15px !important;
+    }
+
+    .background-block .row div[class*="col-md"]:last-child img {
+        height: 200px;
+        min-height: 200px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .background-block .row {
+        flex-direction: column-reverse !important;
+    }
+
+    .background-block .row div[class*="col-md"]:last-child {
+        margin-bottom: 25px;
+    }
+
+    .maserati-page-repuestos .background-block div[class*="col-md"]:last-child {
+        margin-bottom: 25px;
+    }
+
+    .maserati-page-repuestos .maserati-block-banner .maserati-inner-block-banner:first-child .background-block:first-child .row {
+        flex-direction: inherit !important;
+    }
+
+    .maserati-page-repuestos .maserati-inner-block-banner:first-child .background-block:first-child .row div[class*="col-md"]:last-child {
+        padding: 0 !important;
+        margin-bottom: 0;
+        margin-top: 55px;
+    }
+
+    .maserati-page-repuestos .maserati-inner-block-banner:last-child .background-block:last-child {
+        margin-bottom: 0;
+    }
+
+    .maserati-page-mantenimiento .maserati-presentation-programa h3 {
+        text-align: left !important;
+        line-height: normal;
+        margin-bottom: 25px;
+    }
+
+    .maserati-page-mantenimiento .middle-banner-block {
+        margin-bottom: 0;
+    }
+
+    .maserati-gallery {
+        padding: 70px 0;
+    }
+
+    .maserati-gallery h4 {
+        margin-bottom: 0px;
+    }
+
+    .maserati-gallery .tiny-container {
+        margin-bottom: 35px;
+    }
+
+    .maserati-gallery .container {
+        padding: 0;
+    }
+
+    .maserati-gallery .container .row {
+        margin-right: inherit;
+        margin-left: inherit;
+    }
+
+    .maserati-gallery .container .row div[class*="col"]:first-child {
+        padding: 0 0.25rem 0 0;
+    }
+
+    .maserati-gallery .container .row div[class*="col"]:nth-child(2) {
+        padding: 0 0 0 0.25rem;
+    }
+
+    .maserati-gallery .container .row div[class*="col"]:last-child {
+        padding: 0;
+    }
+
+    .maserati-gallery .container .row.g-4 {
+        --bs-gutter-y: 0.5rem;
+    }
+
+    .maserati-page-mantenimiento .maserati-block-featured .background-block:first-child .row {
+        flex-direction: inherit !important;
+    }
+
+    .maserati-page-mantenimiento .maserati-block-featured .background-block:first-child .row div[class*="col-md-"]:last-child {
+        padding: 0;
+        margin-top: 60px;
+        margin-bottom: 0;
+    }
+
+    .maserati-presentation-programa .container .row div[class*="col-md-"]+div[class*="col-md-"] {
+        margin-top: 20px;
+    }
+
+    .maserati-page-programa-extension-de-garantia .maserati-presentation-programa h3 {
+        text-align: left;
+    }
+
+    .maserati-tipos-garantias .card-item-waranty {
+        padding: 25px;
+        min-height: auto;
+    }
+
+    .maserati-tipos-garantias .card-item-waranty+.card-item-waranty {
+        margin-top: 25px;
+    }
+
+    .maserati-tipos-garantias {
+        padding: 55px 0;
+    }
+
+    .maserati-page-programa-extension-de-garantia .middle-banner-block {
+        margin-bottom: 0;
+    }
+
+    .maserati-tipos-garantias .row div[class*="col-md-"] {
+        width: 50%;
+    }
+
+    .maserati-tipos-garantias .row div[class*="col-md-"]:nth-child(odd) {
+        padding-right: 15px;
+    }
+
+    .maserati-tipos-garantias .row div[class*="col-md-"]:nth-child(even) {
+        padding-left: 15px;
+    }
+
+    .table-waranty {
+        font-size: 12px;
+    }
+
+    .table-waranty thead h3 {
+        font-size: 12px;
+        min-height: 55px;
+        line-height: normal;
+    }
+
+    .table-waranty tbody strong {
+        font-size: 12px;
+        margin-bottom: 5px;
+        line-height: normal;
+    }
+
+    .table-waranty td {
+        padding: 15px 0;
+    }
+
+    .maserati-mejores-vehiculos {
+        padding: 0 0 55px 0;
+        background: white;
+    }
+
+    .maserati-mejores-vehiculos .row {
+        flex-direction: column-reverse;
+    }
+
+    .maserati-mejores-vehiculos .row div[class*="col-md-"]:last-child {
+        margin-bottom: 25px;
+        padding: 0;
+    }
+
+    .maserati-mejores-vehiculos .row div[class*="col-md-"]:last-child img {
+        height: 200px;
+        min-height: 200px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .maserati-mejores-vehiculos .row div[class*="col-md-"]:last-child img:last-child {
+        display: none;
+    }
+
+    .maserati-mejores-vehiculos .row div[class*="col-md-"]:first-child .maserati-button {
+        display: none;
+    }
+
+    .maserati-block-featured .background-block:last-child {
+        margin-bottom: 0;
+    }
+
+    .background-block .maserati-button {
+        margin: 0 auto;
+    }
+
+    .maserati-page-garantia-extendida-mc20 .maserati-presentation-programa {
+        padding: 25px 0 0 0;
+    }
+
+    .maserati-page-garantia-extendida-mc20 .maserati-presentation-programa h3 {
+        line-height: normal;
+    }
+
+    .maserati-page-garantia-extendida-mc20 .maserati-presentation-programa h4 {
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+
+    .maserati-page-garantia-extendida-mc20 .table-waranty {
+        margin-top: 0;
+    }
+
+    .maserati-page-garantia-extendida-mc20 .maserati-tipos-garantias {
+        padding: 0 0 55px 0;
+    }
+
+    .maserati-page-garantia-extendida-mc20 .maserati-block-featured .background-block .row div[class*="col-md-"]:last-child {
+        display: none;
+    }
+
+    /** 404 **/
+    .error-404 {
+        height: auto;
+        background-position: top;
+        padding-bottom: 135px;
+    }
+
+    .error-404 .container:first-child>.row {
+        align-items: flex-start;
+        padding-top: 100px;
+    }
+
+    .error-404 .container:first-child>.row div[class*="col-md-"] {
+        padding: 0 50px;
+    }
+
+    .error-404 h1 {
+        font-size: 36px;
+        font-weight: 300;
+    }
+
+    .error-404 h4,
+    .error-404 h4 span {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .enlaces-404 {
+        margin-top: 50px;
+    }
+
+    .enlaces-404 p {
+        font-size: 14px;
+    }
+
+    .enlaces-404 ul {
+        display: block;
+        font-size: 12px;
+    }
+
+    .enlaces-404 ul li+li {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    /** FORMS **/
+    .maserati-page-contacto-merchandesign .maserati-form {
+        padding: 55px 15px;
+    }
+
+    .maserati-form .row+.row {
+        margin-top: 35px;
+    }
+
+    .maserati-form .row div[class*="col-md-"]+div[class*="col-md-"] {
+        margin-top: 15px;
+    }
+
+    .maserati-form h5 {
+        font-size: 20px;
+        color: var(--primary-color);
+    }
+
+    /** CONTACTO MERCHANDESIGN **/
+    .maserati-page-contacto-merchandesign .maserati-form form .row:nth-child(3) h5 {
+        font-size: 20px;
+        color: var(--primary-color);
+    }
+
+    .maserati-page-contacto-merchandesign .maserati-form form .mb-4 {
+        margin-bottom: 10px !important;
+    }
+
+    /** PAGE MERCHANDESIGN **/
+    .maserati-page-merchandesign .maserati-fit-banner h1 {
+        max-width: 100%;
+        font-size: 22px;
+        font-weight: 400 !important;
+    }
+
+    .img-zoom img {
+        transform: scale(1);
+        transform-origin: inherit;
+    }
+
+    .maserati-page-merchandesign .maserati-gallery .fullwidth .row {
+        margin: 0;
+        gap: 0;
+    }
+
+    .maserati-page-merchandesign .maserati-gallery .tiny-container {
+        margin-bottom: 50px;
+    }
+
+    .maserati-page-merchandesign .maserati-gallery .fullwidth .row .col:first-child {
+        padding: 0 5px 0 0;
+        margin: 0;
+    }
+
+    .maserati-page-merchandesign .maserati-gallery .fullwidth .row .col:nth-child(2) {
+        padding: 0 0 0 5px;
+        margin: 0;
+    }
+
+    .maserati-page-merchandesign .maserati-gallery .fullwidth .row .col-md-12 {
+        padding: 0;
+        margin-top: 10px !important;
+    }
+
+    .banner-middle .middle-banner-block {
+        height: 250px;
+        min-height: 250px;
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 0;
+    }
+
+    .banner-middle .tiny-container {
+        top: 45px;
+    }
+
+    .banner-middle .tiny-container h4 {
+        text-align: center !important;
+        font-size: 20px;
+    }
+
+    .maserati-page-merchandesign .maserati-gallery {
+        padding: 50px 0;
+    }
+
+    .maserati-page-merchandesign .maserati-gallery h4 {
+        margin-bottom: 50px;
+        font-size: 20px;
+    }
+
+    .maserati-merchandesign-catalogo {
+        padding-bottom: 45px;
+    }
+
+    .maserati-merchandesign-catalogo h3 {
+        margin-bottom: 45px;
+        text-align: left !important;
+        line-height: normal;
+        font-size: 14px;
+        font-weight: 100 !important;
+        max-width: 235px;
+    }
+
+    .maserati-gallery {
+        padding: 50px 0;
+    }
+
+    .maserati-page-merchandesign .maserati-presentation-programa h3 {
+        font-size: 22px;
+        text-align: left !important;
+        line-height: normal;
+        margin-bottom: 32px;
+        max-width: 100%;
+    }
+
+    .maserati-page-merchandesign .banner-middle .fullwidth img {
+        transform: scale(1);
+        transition: all .5s ease;
+    }
+
+    .maserati-page-merchandesign .maserati-presentation-programa p,
+    .maserati-page-merchandesign .maserati-presentation-programa .bottom-section p {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 100;
+    }
+
+    .maserati-page-merchandesign .maserati-presentation-programa .tiny-container+.container,
+    .maserati-page-merchandesign .maserati-presentation-programa .container+.tiny-container {
+        margin-top: 45px;
+    }
+
+    .maserati-page-merchandesign .maserati-presentation-programa h4 {
+        margin: 0 auto 45px auto;
+    }
+
+    .maserati-page-merchandesign .maserati-presentation-programa h4 {
+        margin: 0 auto 45px auto;
+    }
+
+
+
+    .maserati-page-nuestra-historia .middle-banner-block {
+        margin-bottom: 0;
+    }
+
+    .maserati-page-nuestra-historia .maserati-banner-intermedio h4 {
+        max-width: 215px;
+        margin: 0 auto;
+        transform: translateY(-50%);
+    }
+
+    .maserati-page-nuestra-historia .buttons-fix {
+        display: none;
+    }
+
+    .maserati-actualidad {
+        min-height: 738px;
+        padding: 80px 0;
+    }
+
+    .maserati-actualidad p,
+    .maserati-actualidad p span {
+        font-size: 14px;
+        color: var(--quinary-color);
+    }
+
+    .maserati-actualidad h3,
+    .maserati-actualidad h4 {
+        text-align: center;
+    }
+
+    .maserati-actualidad h4 {
+        margin-bottom: 25px;
+    }
+
+    .maserati-history_presentation {
+        padding: 80px 0 55px 0;
+    }
+
+    .maserati-history_presentation .container,
+    .maserati-history_presentation .micro-container {
+        margin-top: 100px;
+    }
+
+    .maserati-history_presentation h2 {
+        font-size: 36px;
+    }
+
+    .maserati-history_presentation .tiny-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .maserati-history_presentation h4 {
+        order: 3;
+        max-width: 215px;
+        margin: 25px auto 0 auto;
+    }
+
+    .micro-container {
+        padding: 0 15px;
+    }
+
+    .maserati-history_presentation .video-container {
+        margin: 35px 0px;
+    }
+
+    .maserati-history_presentation .more-action {
+        margin: 30px 0 0 0;
+    }
+
+    .maserati-history_presentation .micro-container p {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .maserati-timeline {
+        padding: 55px 0 100px 0;
+    }
+
+    .maserati-linetime-sm .item-linetime {
+        text-align: center;
+        color: var(--primary-color);
+    }
+
+    .maserati-linetime-sm .item-linetime+.item-linetime {
+        margin-top: 60px;
+    }
+
+    .maserati-linetime-sm .item-linetime img {
+        max-width: 190px;
+        mix-blend-mode: luminosity;
+        margin-bottom: 35px;
+    }
+
+    .maserati-linetime-sm .item-linetime h2 {
+        font-size: 36px;
+        font-family: var(--everett-font);
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 0;
+    }
+
+    .maserati-linetime-sm .item-linetime h4 {
+        font-size: 20px;
+        line-height: normal;
+        max-width: 210px;
+        margin: 0 auto;
+    }
+
+    .maserati-linetime-sm .item-linetime .more-action {
+        margin: 25px 0 0 0;
+        color: var(--primary-color) !important;
+    }
+
+    /** TEMPLATE HISTORIAS **/
+    .page-template-template-historias .maserati-fit-banner img {
+        max-height: 150px;
+        min-height: 150px;
+    }
+
+    .maserati-timeline_history {
+        padding: 80px 0;
+    }
+
+    .maserati-timeline_history .container:first-child h1 {
+        font-size: 36px;
+        color: var(--primary-color);
+        margin: 0;
+    }
+
+    .maserati-timeline_history .container:first-child h4 {
+        font-size: 20px;
+        color: var(--primary-color);
+        margin: 0;
+    }
+
+    .maserati-timeline_history .container:first-child {
+        margin-bottom: 75PX;
+    }
+
+    .maserati-timeline_history .row {
+        max-width: 235px;
+        margin: 0 auto;
+    }
+
+    .maserati-timeline_history p {
+        font-size: 14px;
+        color: var(--secondary-color);
+    }
+
+    .page-template-template-historias .buttons-fix {
+        display: none !important;
+    }
+
+    .maserati-timeline_history .row+.row,
+    .maserati-timeline_history .row div[class*="col-md-"]+div[class*="col-md-"] {
+        margin-top: 45px;
+    }
+
+    .final-timeline {
+        margin-top: 80px;
+    }
+
+    .maserati-timeline_history h3 {
+        font-size: 16px;
+        line-height: normal;
+    }
+
+    .maserati-timeline_history h2.h1 {
+        font-size: 28px;
+        line-height: normal;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .maserati-history_since {
+        padding: 80px 0 60px 0;
+    }
+
+    .maserati-page-desde-1914 .middle-banner-block {
+        margin-bottom: 0;
+    }
+
+    .maserati-history_since p {
+        max-width: 230px;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+    .maserati-history_since h4 {
+        margin-bottom: 35px;
+        padding: 0 15px;
+    }
+
+    /** COMPARADOR **/
+    .body-comparador .col-md-6 {
+        max-width: 50%;
+    }
+
+    .body-comparador table {
+        display: block;
+    }
+
+    .body-comparador .col-md-6:first-child {
+        padding-left: 0;
+    }
+
+    .body-comparador .col-md-6:first-child thead {
+        margin-right: 20px !important;
+    }
+
+    .body-comparador .col-md-6:last-child {
+        padding-right: 0;
+    }
+
+    .body-comparador .col-md-6:last-child thead {
+        margin-left: 20px !important;
+    }
+
+    #modalversion table thead p {
+        font-size: 10px;
+        font-weight: 500;
+        margin-top: 5px;
+    }
+
+    .versus {
+        width: 30px;
+        height: 30px;
+        top: 40px;
+    }
+
+    .versus span {
+        font-size: 10px;
+    }
+
+    #modalversion table thead {
+        max-height: 110px;
+        min-height: 110px;
+        padding: 10px;
+    }
+
+    #modalversion table tbody tr {
+        padding: 5px 5px;
+    }
+
+    #modalversion tbody,
+    #modalversion tbody td {
+        font-size: 15px;
+    }
+
+    .body-comparador .icon-close {
+        right: 40px;
+        font-size: 5px;
+        padding: 5px;
+        top: 8px;
+    }
+
+    .body-comparador .col-md-6:last-child .icon-close {
+        right: 7px;
+    }
+
+    #modalversion .header-comparador h3 {
+        font-weight: 500;
+        font-size: 22px;
+    }
+
+    #modalversion .header-comparador p {
+        text-align: left;
+        font-size: 16px;
+        max-width: 70%;
+    }
+
+    #modalAllVersion .btn-close,
+    #modalversion .btn-close {
+        position: relative;
+        right: calc(-100% + 35px);
+        display: block;
+        margin-top: 15px;
+    }
+
+    #modalAllVersion .modal-body {
+        max-width: 100%;
+    }
+
+    #accordionModels .accordion-item {
+        border-radius: 0;
+        padding: 0;
+    }
+
+    #accordionModels .mini-card {
+        flex: 0 0 calc(50% - 5px);
+    }
+
+    .mini-card {
+        min-height: 100px;
+        padding: 15px 5px;
+    }
+
+    #accordionModels .mini-card p {
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+
+    #accordionModels .accordion-header h5 {
+        font-size: 20px;
+    }
+
+    #modalAllVersion .modal-body .container>h3 {
+        text-align: center;
+        font-weight: 500;
+        line-height: normal;
+        font-size: 22px;
+    }
+
+    #modalAllVersion .btn-close {
+        position: relative;
+        right: calc(-100% + 50px);
+        display: block;
+        margin-top: 15px;
+        width: 50px;
+        height: 50px;
+    }
+
+    #accordionModels .accordion-body .select-version {
+        padding: 30px 0;
+        gap: 10px;
+    }
+
+    #modalAllVersion .modal-body {
+        max-width: 100%;
+        padding-top: 50px;
+    }
+
+    .button-call_to_action {
+        padding: 0;
+    }
+
+    #modalConfigVersion .modal-body figure {
+        margin-bottom: 60px;
+    }
+
+    #modalConfigVersion .modal-body figure img:first-child {
+        min-height: 300px;
+        object-fit: cover;
+    }
+
+    .emblema-modelo-conf {
+        top: 110px;
+        max-width: 120px;
+    }
+
+    #modalConfigVersion .btn-close {
+        right: 30px;
+        top: 30px;
+        font-size: 25px;
+    }
+
+    #modalConfigVersion .modal-content .container h3 {
+        text-align: center;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: normal;
+    }
+
+    /** CONFIGURADOR **/
+    .maserati-page-configurador .maserati-fit-banner img {
+        max-height: 455px;
+        min-height: 455px;
+    }
+
+    /** PERSONALIZACIÓN **/
+    .maserati-page-personalizacion .maserati-fit-banner h1 {
+        top: 100px;
+        font-size: 20px;
+        max-width: 100%;
+        font-weight: 500 !important;
+    }
+
+    .maserati-page-personalizacion .maserati-presentation-programa h3 {
+        text-align: left !important;
+        line-height: normal;
+        font-size: 22px;
+        margin-bottom: 35px;
+    }
+
+    .maserati-page-personalizacion .maserati-presentation-programa p {
+        font-size: 14px;
+        line-height: normal;
+        font-weight: 100;
+    }
+
+    .maserati-page-personalizacion .img-zoom img {
+        transform: scale(1);
+    }
+
+    .maserati-page-personalizacion .img-zoom,
+    .maserati-page-personalizacion .maserati-presentation-programa h4 {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .maserati-proceso {
+        padding: 260px 0 45px 0;
+    }
+
+    .maserati-proceso h3 {
+        max-width: 100%;
+        font-size: 22px;
+    }
+
+    .maserati-proceso p {
+        font-size: 14px;
+        margin-bottom: 0;
+        color: #F2F1F0 !important;
+    }
+
+    .iconos-procesos {
+        margin-top: 35px;
+    }
+
+    .iconos-procesos figure img {
+        max-width: 40px;
+        max-height: 26px;
+        height: 26px;
+    }
+
+    .maserati-page-personalizacion .maserati-configurador {
+        min-height: 0px;
+        padding: 120px 0 45px 0;
+    }
+
+    .maserati-page-personalizacion .maserati-configurador .row div[class*="col-md-"] {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        min-height: 410px;
+    }
+
+    .maserati-page-personalizacion .maserati-configurador .row div[class*="col-md-"] h3 {
+        line-height: normal;
+    }
+
+    .maserati-page-personalizacion .modal figure h3 {
+        line-height: normal;
+        max-width: 270px;
+    }
+
+    /** FUORISERIE **/
+    .maserati-page-fuoriserie .maserati-fit-banner h1 {
+        top: 100px;
+        font-size: 20px;
+        max-width: 100%;
+        font-weight: 500 !important;
+    }
+
+    .maserati-fuoriserie_presentacion {
+        padding: 70px 0 50px 0;
+    }
+
+    .maserati-fuoriserie_presentacion video {
+        width: 100%;
+    }
+
+    .maserati-fuoriserie_proyectos .swiper-button-next {
+        right: 0;
+    }
+
+    .maserati-fuoriserie_proyectos .swiper-button-prev {
+        left: 0;
+    }
+
+    .maserati-fuoriserie_presentacion h4 {
+        max-width: 230px;
+    }
+
+    .maserati-fuoriserie_presentacion .title-border::after {
+        margin: 15px 0 15px 0;
+    }
+
+    .maserati-fuoriserie_presentacion p,
+    .maserati-fuoriserie_coleccion p {
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .maserati-fuoriserie_coleccion h3 {
+        text-align: left !important;
+        font-size: 22px;
+    }
+
+    .maserati-fuoriserie_coleccion {
+        padding: 55px 0;
+    }
+
+    .maserati-fuoriserie_coleccion .tiny-container {
+        margin-bottom: 45px;
+    }
+
+    .maserati-fuoriserie_coleccion article img {
+        min-height: 340px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    .maserati-fuoriserie_coleccion article {
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0.2) 17.06%, rgba(0, 0, 0, 0) 55.59%), linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+    }
+
+    .content-article_fuoriserie {
+        top: inherit;
+        transform: inherit;
+        padding: 0 30px;
+        bottom: 50px;
+    }
+
+    .content-article_fuoriserie a {
+        margin: 25px auto 0 auto;
+    }
+
+    .content-article_fuoriserie h2 {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: 6px;
+        line-height: normal;
+    }
+
+    .maserati-fuoriserie_coleccion article+article {
+        margin-top: 25px;
+    }
+
+    .maserati-fuoriserie_featured .container {
+        top: inherit;
+        transform: inherit;
+        bottom: 60px;
+    }
+
+    .maserati-fuoriserie_featured:before {
+        display: none;
+    }
+
+    .maserati-fuoriserie_featured h3 {
+        font-size: 22px;
+        max-width: 230px;
+        line-height: normal;
+    }
+
+    .maserati-fuoriserie_featured p {
+        font-size: 14px;
+    }
+
+    .maserati-fuoriserie_featured a {
+        margin: 45px auto 0 auto;
+    }
+
+    .maserati-fuoriserie_proyectos {
+        padding: 55px 0;
+    }
+
+    .maserati-fuoriserie_proyectos h3,
+    .maserati-fuoriserie_proyectos p {
+        max-width: 100%;
+    }
+
+    .maserati-fuoriserie_proyectos h3 {
+        font-size: 22px;
+    }
+
+    .maserati-fuoriserie_proyectos p {
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .maserati-fuoriserie_proyectos article img {
+        height: 110px;
+        margin-bottom: 15px;
+    }
+
+    .maserati-fuoriserie_proyectos .content-article_fuoriserie--proyecto h5 {
+        max-width: 100%;
+        font-size: 16px;
+        line-height: normal;
+    }
+
+    .maserati-fuoriserie_proyectos .content-article_fuoriserie--proyecto {
+        padding: 0 10px 15px 10px;
+    }
+
+    .maserati-fuoriserie_proyectos .swiper-button-next,
+    .maserati-fuoriserie_proyectos .swiper-button-prev {
+        display: none;
+    }
+
+    .maserati-page-fuoriserie .items-personalizables {
+        padding: 0 0 60px;
+    }
+
+    .maserati-page-contacto-fuoriserie .maserati-form {
+        padding: 60px 15px;
+    }
+
+    /** FUORISERIE COLECCIÓN **/
+    .page-template-template-coleccion .maserati-gallery h3,
+    .page-template-template-coleccion .maserati-model_galeria h3 {
+        text-align: left !important;
+    }
+
+    .page-template-template-coleccion .maserati-gallery .tiny-container {
+        margin-bottom: 30px;
+    }
+
+    .page-template-template-coleccion .maserati-fuoriserie_featured.item-destacado .container {
+        bottom: inherit;
+        top: 60px;
+        padding: 0 60px;
+    }
+
+    .page-template-template-coleccion .maserati-fuoriserie_featured.item-destacado a {
+        margin: 15px auto 0 auto;
+    }
+
+    .page-template-template-coleccion .maserati-fuoriserie_featured::before {
+        display: none;
+    }
+
+    .page-template-template-coleccion .maserati-fuoriserie_featured img {
+        min-height: 340px;
+        object-fit: cover;
+    }
+
+    .page-template-template-coleccion .items-personalizables {
+        padding-top: 0;
+    }
+
+
+
+    /** DEFAULT PAGE **/
+    .default-page p,
+    .default-page ol,
+    .default-page ul {
+        font-size: 14px;
+    }
+
+    .default-page ol,
+    .default-page ul {
+        margin: 0 0 0 20px;
+    }
+
+    .default-page h3 {
+        margin: 70px 0 25px 0;
+        line-height: normal;
+        font-size: 22px;
+    }
+
+    .page:not(.home) .entry-content {
+        padding: 50px 0;
+    }
+
+    /** PROYECTOS **/
+    .presentation-proyecto {
+        padding: 55px 0;
+    }
+
+    .presentation-proyecto p,
+    .single-proyectos_fuoriserie .maserati-gallery p {
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .presentation-proyecto img {
+        margin: 20px 0 0 0;
+    }
+
+    .single-proyectos_fuoriserie .medium-container {
+        margin: 0 auto !important;
+    }
+
+    .single-proyectos_fuoriserie .maserati-gallery p {
+        margin-bottom: 50px;
+    }
+
+    .single-proyectos_fuoriserie .presentation-proyecto h4 {
+        margin-bottom: 15px;
+    }
+
+    .single-proyectos_fuoriserie .title-border::after {
+        margin: 15px 0 15px 0;
+    }
+
+    .maserati-proyecto_multimedia.maserati-proyecto-dark_multimedia {
+        padding: 55px 0;
+    }
+
+    .item-multimedia+.item-multimedia {
+        margin-top: 50px;
+    }
+
+    .maserati-proyecto_multimedia p {
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .maserati-proyecto_multimedia.maserati-proyecto-dark_multimedia .item-multimedia:nth-child(odd) .row {
+        flex-direction: row-reverse;
+    }
+
+    .maserati-proyecto_multimedia.maserati-proyecto-dark_multimedia .item-multimedia .row>div[class*="col-md-"]:first-child {
+        margin-bottom: 55px;
+    }
+
+    .maserati-proyecto_multimedia h3 {
+        font-size: 22px;
+        line-height: normal;
+        margin-bottom: 30px;
+    }
+
+    .maserati-proyecto_multimedia video,
+    .maserati-proyecto_multimedia img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .swiper-light-proyectos-furioserie .swiper-slide img {
+        min-height: 200px;
+        object-fit: cover;
+    }
+
+    .swiper-light-proyectos-furioserie .swiper-pagination {
+        position: relative;
+        bottom: -8px !important;
+    }
+
+    #formSuccess .btn-close {
+        right: 15px;
+        top: 15px;
+    }
+
+    .maserati-page-contacto .maserati-form,
+    .maserati-page-cotizador-modelos .maserati-form {
+        padding: 45px 15px;
+    }
+
+    .maserati-page-contacto .row div[class*="col-md"]+div[class*="col-md"] {
+        margin-top: 15px;
+    }
+
+    /** COTIZADOR MODELOS **/
+    .cf7mls_progress_bar {
+        display: block;
+    }
+
+    .cf7mls_number_step_wrap {
+        display: none !important;
+    }
+
+    p.cf7mls_progress_bar_title {
+        font-size: 14px !important;
+        max-width: 100px;
+        margin: 20px auto 0 auto !important;
+    }
+
+    ul[data-bg-style-bar="navigation_horizontal_round"] li .cf7_mls_steps_item_icon,
+    ul[data-bg-style-bar="navigation_horizontal_round"] li .cf7_mls_steps_item_icon {
+        line-height: 30px !important;
+        margin-left: 0 !important;
+        height: 30px !important;
+        width: 30px !important;
+    }
+
+    ul[data-bg-style-bar="navigation_horizontal_round"] li:before,
+    ul[data-bg-style-bar="navigation_horizontal_round"] li:before {
+        width: 30px !important;
+        line-height: 30px !important;
+        height: 30px !important;
+    }
+
+    ul[data-bg-style-bar="navigation_horizontal_round"] li:after,
+    ul[data-bg-style-bar="navigation_horizontal_round"] li:after {
+        top: 15px !important;
+    }
+
+    ul[data-bg-style-bar="navigation_horizontal_round"] li.current+li::after {
+        background: var(--quaternary-color) !important;
+        background: linear-gradient(90deg, rgba(12, 35, 64, 1) 0%, rgba(12, 35, 64, 1) 40%, rgba(182, 182, 182, 1) 20%, rgba(182, 182, 182, 1) 100%) !important;
+    }
+
+    .cf7mls_bar_style_navigation_horizontal_squaren.cf7mls_bar_style_text_vertical,
+    .cf7mls_bar_style_navigation_horizontal_round.cf7mls_bar_style_text_vertical {
+        margin: 0 auto 40px auto;
+    }
+
+    #formSuccess h3 {
+        font-size: 18px;
+    }
+
+    #formSuccess p {
+        font-size: 16px;
+    }
+
+    #formSuccess .modal-body {
+        padding: 60px 0;
+    }
+
+    /** COTIZADPR PRE-OWNED **/
+    .maserati-page-cotizador-pre-owned .maserati-form {
+        padding: 110px 15px;
+    }
+
+    .archive.category .category-post .container form+.row>div[class*="col-md"]:first-child {
+        flex: 0 0 70%;
+    }
+
+    .archive.category .category-post .container form+.row>div[class*="col-md"]:first-child h3 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .archive.category .category-post .container form+.row>div[class*="col-md"]:last-child {
+        flex: 0 0 30%;
+    }
+
+    .dropdown-maserati select {
+        font-size: 10px;
+        font-weight: 500;
+        padding: 8px 30px 8px 8px;
+        background-size: 10px;
+        background-position: 90%;
+    }
+
+    .swiper-waranty-motors img {
+        margin-bottom: 0;
+    }
+
+    .swiper-waranty-motors .header-model img {
+        max-width: 218px;
+        max-height: 185px;
+        min-height: 185px;
+        width: 100%;
+        object-fit: cover !important;
+    }
+
+    .swiper-waranty-motors .header-model {
+        margin-bottom: 0;
+    }
+
+    .swiper-waranty-motors .header-model h3 {
+        color: var(--primary-color);
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .maserati-motors-waranty .swiper-button-prev,
+    .maserati-motors-waranty .swiper-rtl .swiper-button-next,
+    .maserati-motors-waranty .swiper-button-next,
+    .maserati-motors-waranty .swiper-rtl .swiper-button-prev {
+        top: calc(185px / 2);
+    }
+
+    .maserati-garantia_motor>.container:first-child p {
+        font-weight: 100;
+    }
+
+    .maserati-waranty-model .fullwidth h3 {
+        line-height: normal;
+    }
+
+    .maserati-waranty-model .fullwidth:nth-child(2)h4 {
+        color: var(--tertiary-color);
+        max-width: 230px;
+    }
+
+    .maserati-presentation-programa .tiny-container h3 {
+        max-width: 100%;
+        color: var(--primary-color);
+        line-height: normal;
+    }
+
+    .maserati-presentation-programa .tiny-container p {
+        font-size: 14px;
+    }
+
+    .maserati-card-accordion .accordion-button h5,
+    .maserati-card-accordion .accordion-button p {
+        font-size: 15px !important;
+        font-weight: 500 !important;
+    }
+
+    .maserati-card-accordion .accordion-body p,
+    .maserati-card-accordion .accordion-body ul,
+    .maserati-tipos-garantias .card-item-waranty p {
+        font-size: 14px;
+        color: var(--secondary-color);
+    }
+
+    .maserati-tipos-garantias .card-item-waranty h5 {
+        font-size: 16px;
+        color: var(--primary-color);
+    }
+
+    .maserati-mejores-vehiculos p,
+    .maserati-mejores-vehiculos ul {
+        font-size: 14px;
+        color: var(--secondary-color);
+    }
+
+    #puntos-de-venta {
+        padding-bottom: 0;
+    }
+
+    .maserati-disclamers {
+        width: 10px !important;
+        height: 10px !important;
+        font-size: 5px;
+    }
+
+    .woocommerce-loop-product__link .price .maserati-disclamers {
+        top: -10px;
+        margin-left: 0px;
+    }
+
+    .show-footer .buttons-fix {
+        opacity: 0;
+        visibility: hidden;
+        transition: all .5s ease;
+    }
+
+    .single main ul {
+        font-size: 16px;
+        font-family: var(--everett-font);
+        font-weight: 300;
+    }
+
+    .gallery-content.img-duo .col,
+    .gallery-content.img-individual .col {
+        width: 100%;
+        flex: 0 0 100%;
+        padding: 0 15px !important;
+    }
+
+    .maserati-page-mundo-maserati .maserati-block-featured .container,
+    .maserati-page-mundo-maserati .maserati-block-featured .container .row div[class*="col-md"] {
+        padding: 0;
+    }
+
+    .maserati-page-mundo-maserati .maserati-block-featured .container .row {
+        margin: 0;
+    }
+
+    .vz-wrapper canvas {
+        transform: scale(.4);
+    }
+
+    .swiper-2_5_gallery-modal-cf .swiper-slide img {
+        height: 444px !important;
+    }
+
+    .swiper-2_5_gallery-modal-cf .swiper-slide .maserati-shadow {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+    }
+}
